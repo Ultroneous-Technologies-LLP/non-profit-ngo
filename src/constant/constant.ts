@@ -1,0 +1,1 @@
+export const BREAKPOINT_XL = 1280
