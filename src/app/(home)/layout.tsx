@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 import { segoeUi, segoeUiBold } from "@/constant";
 
-import "./globals.css";
+import "../../styles/globals.css";
 
 export const metadata: Metadata = {
   title: "NGO Website Design | Non-Profit Charity Landing Page UI",
