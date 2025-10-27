@@ -51,14 +51,14 @@ export const Header: FC<HeaderProps> = ({ buttons, logo, menu }) => {
     >
       <div
         className={clsx(
-          "2xl:max-w-348.5 w-auto rounded-xl transition-transform duration-500 ease-linear mx-4 md:mx-6 xl:mx-16 2xl:mx-auto",
+          "max-w-360 w-auto rounded-xl transition-transform duration-500 ease-linear mx-4 md:mx-6 xl:mx-16 2xl:mx-auto",
           {
             "bg-[#ECECE2] shadow-md backdrop-blur-[22px]": scrolled,
             "bg-transparent": !scrolled,
           }
         )}
       >
-        <div className="flex justify-between items-center py-4 max-w-336 mx-auto px-4 xl:px-16">
+        <div className="flex justify-between items-center py-4 px-4 xl:px-16">
           <div>
             <Image
               src={logo.src}

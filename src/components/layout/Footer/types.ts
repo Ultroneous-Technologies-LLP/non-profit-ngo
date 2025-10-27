@@ -1,9 +1,6 @@
-export type Icon = "Facebook" | "Instagram" | "LinkedIn" | "Youtube";
+import { Image } from "@/types";
 
-interface Logo {
-  src: string;
-  alt: string;
-}
+export type Icon = "Facebook" | "Instagram" | "LinkedIn" | "Youtube";
 
 interface Button {
   label: string;
@@ -27,12 +24,12 @@ interface SocialSection {
 }
 
 export interface FooterProps {
-  logo: Logo;
+  logo: Image;
   heading: string;
   description: string;
   button: Button;
   navLinks: NavLink[];
   socialSection: SocialSection;
-  backgroundImage: Logo;
+  backgroundImage: Image;
   companyName: string;
 }

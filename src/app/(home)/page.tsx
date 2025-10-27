@@ -1,11 +1,12 @@
+import { Hero } from "@/components";
+import data from "@/content/home-page.json";
+
+import { HomePageProps } from "./types";
+
 const Home = () => {
-  return (
-    <div className="h-screen pt-10 text-center text-5xl xl:text-8xl">
-      <h1 className="font-segoe-regular">
-        <span>Welcome to Non Profit NGO</span>
-      </h1>
-    </div>
-  );
+  const { hero }: HomePageProps = data;
+
+  return <Hero {...hero} />;
 };
 
 export default Home;
