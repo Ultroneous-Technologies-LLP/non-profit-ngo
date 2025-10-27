@@ -1,7 +1,9 @@
 @import "tailwindcss";
 
 @theme {
- --font-segoe-regular: 'Segoe UI', sans-serif;
- --font-segoe-bold: 'Segoe UI', sans-serif;
-}
+  --font-segoe-regular: "Segoe UI", sans-serif;
+  --font-segoe-bold: "Segoe UI", sans-serif;
 
+  --color-primary-yellow: #edfca7;
+  --color-primary-blue: #002c5b;
+}

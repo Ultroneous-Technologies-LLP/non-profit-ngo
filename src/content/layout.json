@@ -44,5 +44,37 @@
         "ariaLabel": "Go to login page"
       }
     }
+  },
+  "footer": {
+    "logo": {
+      "src": "/assets/svg/logo.svg",
+      "alt": "logo"
+    },
+    "heading": "Help for their beautiful future",
+    "description": "Your support is a beacon of hope for a brighter future. By contributing, you help build a foundation of opportunity and joy for those in need. Your generosity paves the way for a beautiful tomorrow.",
+    "button": {
+      "label": "Donate Now",
+      "href": "/"
+    },
+    "navLinks": [
+      { "label": "About", "href": "/" },
+      { "label": "Agenda", "href": "/" },
+      { "label": "Partners", "href": "/" },
+      { "label": "Testimonials", "href": "/" }
+    ],
+    "socialSection": {
+      "title": "Follow Us",
+      "links": [
+        { "icon": "LinkedIn", "href": "/", "label": "LinkedIn" },
+        { "icon": "Facebook", "href": "/", "label": "Facebook" },
+        { "icon": "Instagram", "href": "/", "label": "Instagram" },
+        { "icon": "Youtube", "href": "/", "label": "Youtube" }
+      ]
+    },
+    "companyName": "Lift Media, LLC",
+    "backgroundImage": {
+      "src": "/assets/images/background-rows.png",
+      "alt": "footer background"
+    }
   }
 }

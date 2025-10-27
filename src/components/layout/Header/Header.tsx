@@ -74,7 +74,7 @@ export const Header: FC<HeaderProps> = ({ buttons, logo, menu }) => {
               <Link
                 key={id}
                 href={href}
-                className="font-segoe-regular font-semibold text-xl/5 text-[#002C5B]"
+                className="font-segoe-regular font-semibold text-xl/5 text-primary-blue"
                 aria-label={ariaLabel}
               >
                 {label}
@@ -83,7 +83,7 @@ export const Header: FC<HeaderProps> = ({ buttons, logo, menu }) => {
           </div>
           <div className="gap-5 items-center hidden xl:flex">
             <Link
-              className="bg-[#EDFCA7] py-5 px-6.5 rounded-full font-segoe-regular font-semibold text-xl/5 text-[#002C5B]"
+              className="bg-primary-yellow py-5 px-6.5 rounded-full font-segoe-regular font-semibold text-xl/5 text-primary-blue"
               aria-label={buttons.donateButton.ariaLabel}
               href={buttons.donateButton.href}
             >
@@ -102,14 +102,14 @@ export const Header: FC<HeaderProps> = ({ buttons, logo, menu }) => {
             className="flex-col gap-1 flex xl:hidden z-50 relative"
             aria-label="Toggle menu"
           >
-            <span className="rounded-full  inline-block ml-auto mr-0 bg-[#002C5B] w-6 h-1" />
-            <span className="w-8 h-1 rounded-full inline-block transition-all duration-300 bg-[#002C5B]" />
-            <span className="rounded-full inline-block ml-0 mr-auto bg-[#002C5B] w-6 h-1" />
+            <span className="rounded-full  inline-block ml-auto mr-0 bg-primary-blue w-6 h-1" />
+            <span className="w-8 h-1 rounded-full inline-block transition-all duration-300 bg-primary-blue" />
+            <span className="rounded-full inline-block ml-0 mr-auto bg-primary-blue w-6 h-1" />
           </button>
         </div>
       </div>
       {menuOpen && (
-        <div className="fixed inset-0 bg-[#002C5B] flex flex-col px-4 pb-4 pt-12.5 text-center xl:hidden w-full h-dvh">
+        <div className="fixed inset-0 bg-primary-blue flex flex-col px-4 pb-4 pt-12.5 text-center xl:hidden w-full h-dvh">
           <div className="w-full">
             <div className="pb-4 flex justify-end">
               <Cross onClick={() => setMenuOpen(!menuOpen)} />
@@ -131,7 +131,7 @@ export const Header: FC<HeaderProps> = ({ buttons, logo, menu }) => {
                   href={buttons.donateButton.href}
                   aria-label={buttons.donateButton.ariaLabel}
                   onClick={() => setMenuOpen(false)}
-                  className="bg-[#EDFCA7] py-5 px-10 rounded-full font-segoe-regular font-semibold text-xl/5 text-[#002C5B] inline-block"
+                  className="bg-primary-yellow py-5 px-10 rounded-full font-segoe-regular font-semibold text-xl/5 text-primary-blue inline-block"
                 >
                   {buttons.donateButton.label}
                 </Link>

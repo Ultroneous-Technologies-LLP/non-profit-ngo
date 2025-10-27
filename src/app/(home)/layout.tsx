@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 import data from "@/content/layout.json";
-import { Header } from "@/components";
+import { Footer, Header } from "@/components";
 import { segoeUi, segoeUiBold } from "@/constant";
 
 import "../../styles/globals.css";
@@ -18,7 +18,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const { header }: layoutProps = data;
+  const { header, footer }: layoutProps = data;
   return (
     <html lang="en" className="bg-[#D4D4D4] flex items-center justify-center">
       <body
@@ -26,6 +26,7 @@ export default function RootLayout({
       >
         <Header {...header} />
         <main className="pt-24 max-w-414">{children}</main>
+        <Footer {...footer} />
       </body>
     </html>
   );
