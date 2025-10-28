@@ -26,5 +26,31 @@
       "src": "/assets/images/background-rows.png",
       "alt": "background"
     }
+  },
+  "weNeed": {
+    "firstText": {
+      "title": "WE",
+      "image": {
+        "src": "/assets/images/children-1.png",
+        "alt": "Children 1"
+      }
+    },
+    "secondText": {
+      "titles": [
+        { "text": "NEED", "color": "text-primary-blue" },
+        { "text": "YOUR", "color": "text-[#8999AA]" }
+      ],
+      "image": {
+        "src": "/assets/images/children-2.png",
+        "alt": "Children 2"
+      }
+    },
+    "thirdText": {
+      "title": { "text": "SUPPORT", "color": "text-[#8999AA]" },
+      "image": {
+        "src": "/assets/images/children-3.png",
+        "alt": "Children 3"
+      }
+    }
   }
 }

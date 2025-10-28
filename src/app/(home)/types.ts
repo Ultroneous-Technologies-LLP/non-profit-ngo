@@ -1,10 +1,11 @@
-import { FooterProps, HeaderProps, HeroProps } from "@/components";
+import { FooterProps, HeaderProps, HeroProps, WeNeedProps } from "@/components";
 
 export interface layoutProps {
-    header:HeaderProps
-    footer:FooterProps
+  header: HeaderProps;
+  footer: FooterProps;
 }
 
 export interface HomePageProps {
-    hero:HeroProps
+  hero: HeroProps;
+  weNeed: WeNeedProps;
 }
