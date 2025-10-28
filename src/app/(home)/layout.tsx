@@ -20,7 +20,10 @@ export default function RootLayout({
 }>) {
   const { header, footer }: layoutProps = data;
   return (
-    <html lang="en" className="bg-[#D4D4D4] flex items-center justify-center">
+    <html
+      lang="en"
+      className="bg-[#D4D4D4] flex items-center justify-center scroll-smooth"
+    >
       <body
         className={`${segoeUi.variable} ${segoeUiBold.variable} antialiased shadow-[39.55px_77.44px_191.14px_0_#0000001A] bg-[#ECECE2] rounded-2xl xl:rounded-[29px] max-w-360 mx-4 mt-6 md:mt-8 md:mx-6 xl:m-16 w-full`}
       >
