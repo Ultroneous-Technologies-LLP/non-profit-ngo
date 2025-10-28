@@ -76,5 +76,18 @@
       "label": "Discover more",
       "href": "/"
     }
+  },
+  "mostTrusted": {
+    "title": "Most trusted Online Donation Platform",
+    "stats": [
+      { "number": "2.7M+", "label": "Donations" },
+      { "number": "15M+", "label": "Lives Impacted" },
+      { "number": "3000+", "label": "Verified NGO’s" },
+      { "number": "300+", "label": "Corporate Partners" }
+    ],
+    "backgroundImage": {
+      "src": "/assets/images/background-rows.png",
+      "alt": "Decorative background rows pattern"
+    }
   }
 }
