@@ -1,14 +1,13 @@
 import { Image } from "@/types";
 
-interface MissionType {
+interface FundraiserItem {
   id:number
+  src: string;
+  alt: string;
   title: string;
   subtitle: string;
-  image: string;
-  percent: number;
-  status: string;
+  donateText: string;
   link: string;
-  label: string;
 }
 
 interface ViewMoreButton {
@@ -16,10 +15,10 @@ interface ViewMoreButton {
   link: string;
 }
 
-export interface GiveMonthlyProps {
+export interface SupportFundraiserProps {
   title: string;
   description: string;
-  missions: MissionType[];
+  fundraisers: FundraiserItem[];
   viewMore: ViewMoreButton;
-  backgroundImage:Image
+  backgroundImage: Image;
 }

@@ -133,5 +133,46 @@
       "src": "/assets/images/background-rows.avif",
       "alt": "Decorative background rows and columns pattern"
     }
+  },
+  "supportFundraiser": {
+    "title": "Support a Fundraiser",
+    "description": "By joining our fundraiser, you're not just donating money; you're offering a chance at a better life. Whether you choose to give a one-time donation or become a monthly supporter, every bit helps us reach our goal of creating a more compassionate and supportive community.",
+    "fundraisers": [
+      {
+        "id": 1,
+        "src": "/assets/images/abandoned-children.avif",
+        "alt": "Abandoned children support",
+        "title": "Help 70-year-old Vanitha provide 100+ abandoned",
+        "subtitle": "by Shreekanth NGO",
+        "donateText": "Donate Now",
+        "link": "/"
+      },
+      {
+        "id": 2,
+        "src": "/assets/images/rescuing-girls-trafficking.avif",
+        "alt": "Rescuing girls from trafficking",
+        "title": "Help Sreeja to provide support in rescuing girl’s from sex trafficking",
+        "subtitle": "by Sreeja",
+        "donateText": "Donate Now",
+        "link": "/"
+      },
+      {
+        "id": 3,
+        "src": "/assets/images/medical-support-to-childrens.avif",
+        "alt": "Medical support to children",
+        "title": "Help Dinesh to provide food and medical support to Childrens",
+        "subtitle": "by Srinivasa",
+        "donateText": "Donate Now",
+        "link": "/"
+      }
+    ],
+    "viewMore": {
+      "label": "View more",
+      "link": "/"
+    },
+    "backgroundImage": {
+      "src": "/assets/images/background-rows.avif",
+      "alt": "Decorative background rows and columns pattern"
+    }
   }
 }

@@ -17,7 +17,7 @@ export const GiveMonthly: FC<GiveMonthlyProps> = ({
   return (
     <Container
       backgroundClassName="pb-25 xl:pb-40 px-4 md:px-6 xl:px-15"
-      className=" relative overflow-hidden"
+      className="relative overflow-hidden"
     >
       <div className="z-10 pt-4 md:pt-3 xl:pt-8">
         <h2 className="font-segoe-regular font-semibold text-[32px]/10 xl:text-6xl/20 text-primary-blue text-center pb-2 xl:pb-2.5">

@@ -5,6 +5,7 @@ import {
   HeaderProps,
   HeroProps,
   MostTrustedProps,
+  SupportFundraiserProps,
   WeNeedProps,
 } from "@/components";
 
@@ -18,5 +19,6 @@ export interface HomePageProps {
   weNeed: WeNeedProps;
   aboutUs: AboutUsProps;
   mostTrusted: MostTrustedProps;
-  giveMonthly:GiveMonthlyProps
+  giveMonthly: GiveMonthlyProps;
+  supportFundraiser: SupportFundraiserProps;
 }
