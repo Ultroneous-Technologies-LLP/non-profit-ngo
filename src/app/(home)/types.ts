@@ -4,6 +4,7 @@ import {
   GiveMonthlyProps,
   HeaderProps,
   HeroProps,
+  MarqueeAnimationProps,
   MostTrustedProps,
   SupportFundraiserProps,
   WeNeedProps,
@@ -21,4 +22,5 @@ export interface HomePageProps {
   mostTrusted: MostTrustedProps;
   giveMonthly: GiveMonthlyProps;
   supportFundraiser: SupportFundraiserProps;
+  marqueeAnimation: MarqueeAnimationProps;
 }

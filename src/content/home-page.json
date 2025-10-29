@@ -174,5 +174,37 @@
       "src": "/assets/images/background-rows.avif",
       "alt": "Decorative background rows and columns pattern"
     }
+  },
+  "marqueeAnimation": {
+    "donations": [
+      {
+        "id": 1,
+        "name": "Kerry Williams",
+        "amount": 500,
+        "image": "/assets/svg/donated.svg",
+        "alt": "Group of Children"
+      },
+      {
+        "id": 2,
+        "name": "John Smith",
+        "amount": 250,
+        "image": "/assets/svg/donated.svg",
+        "alt": "Group of Children"
+      },
+      {
+        "id": 3,
+        "name": "Maria Garcia",
+        "amount": 100,
+        "image": "/assets/svg/donated.svg",
+        "alt": "Group of Children"
+      },
+      {
+        "id": 4,
+        "name": "David Brown",
+        "amount": 350,
+        "image": "/assets/svg/donated.svg",
+        "alt": "Group of Children"
+      }
+    ]
   }
 }

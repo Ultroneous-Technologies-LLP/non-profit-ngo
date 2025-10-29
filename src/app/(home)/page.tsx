@@ -3,6 +3,7 @@ import {
   AboutUs,
   GiveMonthly,
   Hero,
+  MarqueeAnimation,
   MostTrusted,
   SupportFundraiser,
   WeNeed,
@@ -18,6 +19,7 @@ const Home = () => {
     mostTrusted,
     giveMonthly,
     supportFundraiser,
+    marqueeAnimation,
   }: HomePageProps = data;
 
   return (
@@ -28,6 +30,7 @@ const Home = () => {
       <MostTrusted {...mostTrusted} />
       <GiveMonthly {...giveMonthly} />
       <SupportFundraiser {...supportFundraiser} />
+      <MarqueeAnimation {...marqueeAnimation} />
     </>
   );
 };
