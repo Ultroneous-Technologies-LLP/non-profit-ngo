@@ -12,7 +12,7 @@ export const MostTrusted: FC<MostTrustedProps> = ({
 }) => {
   return (
     <Container
-      backgroundClassName="mx-4 xl:mx-15 pb-25 xl:pb-40 overflow-hidden"
+      backgroundClassName="mx-4 xl:mx-15 pb-20.5 md:pb-21.5 xl:pb-40 overflow-hidden"
       className="bg-primary-yellow rounded-[20px] xl:rounded-[60px] py-6 xl:py-17.5 relative"
     >
       <h2 className="z-10 font-segoe-regular font-semibold text-[32px]/10 xl:text-[60px]/18.5 text-primary-blue md:max-w-100 xl:max-w-140 w-full mx-auto text-center pb-8 xl:pb-15">

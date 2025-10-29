@@ -1,6 +1,7 @@
 import {
   AboutUsProps,
   FooterProps,
+  GiveMonthlyProps,
   HeaderProps,
   HeroProps,
   MostTrustedProps,
@@ -17,4 +18,5 @@ export interface HomePageProps {
   weNeed: WeNeedProps;
   aboutUs: AboutUsProps;
   mostTrusted: MostTrustedProps;
+  giveMonthly:GiveMonthlyProps
 }

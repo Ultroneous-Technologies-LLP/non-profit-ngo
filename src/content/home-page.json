@@ -23,8 +23,8 @@
       "alt": "hero image"
     },
     "backgroundImage": {
-      "src": "/assets/images/background-rows.png",
-      "alt": "background"
+      "src": "/assets/images/background-rows.avif",
+      "alt": "Decorative background rows columns pattern"
     }
   },
   "weNeed": {
@@ -59,8 +59,8 @@
       "alt": "About us"
     },
     "backgroundImage": {
-      "src": "/assets/images/background-rows.png",
-      "alt": "Decorative background rows and columns"
+      "src": "/assets/images/background-rows.avif",
+      "alt": "Decorative background rows columns pattern"
     },
     "title": "About Company",
     "description": "You’re the Hope for others",
@@ -86,8 +86,52 @@
       { "number": "300+", "label": "Corporate Partners" }
     ],
     "backgroundImage": {
-      "src": "/assets/images/background-rows.png",
-      "alt": "Decorative background rows pattern"
+      "src": "/assets/images/background-rows.avif",
+      "alt": "Decorative background rows columns pattern"
+    }
+  },
+  "giveMonthly": {
+    "title": "Give Monthly",
+    "description": "You have the power to make a lasting impact by donating monthly to the NGO of your choice. Your consistent support can provide essential resources and life-saving aid, giving hope and transforming the lives of countless individuals in need.",
+    "missions": [
+      {
+        "id": 1,
+        "title": "Mission",
+        "subtitle": "No Children Orphaned",
+        "image": "/assets/images/no-children-orphaned.avif",
+        "percent": 45,
+        "status": "2312 Orphans supported 2666 left",
+        "link": "/",
+        "label": "Donate Now"
+      },
+      {
+        "id": 2,
+        "title": "Mission",
+        "subtitle": "Help Abandoned Elders",
+        "image": "/assets/images/help-abandoned-elders.avif",
+        "percent": 43,
+        "status": "2366 Elders supported 3000 left",
+        "link": "/",
+        "label": "Donate Now"
+      },
+      {
+        "id": 3,
+        "title": "Mission",
+        "subtitle": "Every Girl in school",
+        "image": "/assets/images/every-girl-in-school.avif",
+        "percent": 75,
+        "status": "3888 Girl supported 4000 left",
+        "link": "/",
+        "label": "Donate Now"
+      }
+    ],
+    "viewMore": {
+      "label": "View more",
+      "link": "/"
+    },
+    "backgroundImage": {
+      "src": "/assets/images/background-rows.avif",
+      "alt": "Decorative background rows and columns pattern"
     }
   }
 }

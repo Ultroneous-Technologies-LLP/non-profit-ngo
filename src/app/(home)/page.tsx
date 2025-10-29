@@ -1,10 +1,11 @@
 import data from "@/content/home-page.json";
-import { AboutUs, Hero, MostTrusted, WeNeed } from "@/components";
+import { AboutUs, GiveMonthly, Hero, MostTrusted, WeNeed } from "@/components";
 
 import { HomePageProps } from "./types";
 
 const Home = () => {
-  const { hero, weNeed, aboutUs, mostTrusted }: HomePageProps = data;
+  const { hero, weNeed, aboutUs, mostTrusted, giveMonthly }: HomePageProps =
+    data;
 
   return (
     <>
@@ -12,6 +13,7 @@ const Home = () => {
       <WeNeed {...weNeed} />
       <AboutUs {...aboutUs} />
       <MostTrusted {...mostTrusted} />
+      <GiveMonthly {...giveMonthly} />
     </>
   );
 };
