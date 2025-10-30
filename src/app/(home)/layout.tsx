@@ -2,7 +2,7 @@ import clsx from "clsx";
 import type { Metadata } from "next";
 import { FC, ReactNode } from "react";
 
-import { Header } from "@/components";
+import { Footer, Header } from "@/components";
 import { segoeUiFont, segoeUiBoldFont } from "@/constant";
 import data from "@/content/layout.json";
 
@@ -54,7 +54,7 @@ interface RootLayoutProps {
 }
 
 const RootLayout: FC<RootLayoutProps> = ({ children }) => {
-  const { header }: LayoutProps = data;
+  const { header, footer }: LayoutProps = data;
   return (
     <html className="flex items-center justify-center bg-[#D4D4D4]" lang="en">
       <body
@@ -66,6 +66,7 @@ const RootLayout: FC<RootLayoutProps> = ({ children }) => {
       >
         <Header {...header} />
         <main className="max-w-414 pt-24">{children}</main>
+        <Footer {...footer} />
       </body>
     </html>
   );
