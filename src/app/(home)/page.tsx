@@ -5,6 +5,7 @@ import {
   Hero,
   MarqueeAnimation,
   MostTrusted,
+  RaiseFund,
   SupportFundraiser,
   WeNeed,
 } from "@/components";
@@ -20,6 +21,7 @@ const Home = () => {
     giveMonthly,
     supportFundraiser,
     marqueeAnimation,
+    raiseFund,
   }: HomePageProps = data;
 
   return (
@@ -31,6 +33,7 @@ const Home = () => {
       <GiveMonthly {...giveMonthly} />
       <SupportFundraiser {...supportFundraiser} />
       <MarqueeAnimation {...marqueeAnimation} />
+      <RaiseFund {...raiseFund} />
     </>
   );
 };

@@ -44,7 +44,7 @@ export const SupportFundraiser: FC<SupportFundraiserProps> = ({
               <Link
                 href={link}
                 className="py-2.5 px-6.5 xl:px-5.5 border font-segoe-regular font-semibold inline-block rounded-full text-sm/5 xl:text-lg/6.5 bg-primary-yellow text-primary-blue border-transparent
-              hover:bg-transparent hover:text-primary-blue hover:border-primary-blue duration-500 transition-colors ease-in-out"
+                hover:bg-transparent hover:text-primary-blue hover:border-primary-blue duration-500 transition-colors ease-in-out"
               >
                 {donateText}
               </Link>

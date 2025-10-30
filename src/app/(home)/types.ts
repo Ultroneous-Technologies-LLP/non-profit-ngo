@@ -6,6 +6,7 @@ import {
   HeroProps,
   MarqueeAnimationProps,
   MostTrustedProps,
+  RaiseFundProps,
   SupportFundraiserProps,
   WeNeedProps,
 } from "@/components";
@@ -23,4 +24,5 @@ export interface HomePageProps {
   giveMonthly: GiveMonthlyProps;
   supportFundraiser: SupportFundraiserProps;
   marqueeAnimation: MarqueeAnimationProps;
+  raiseFund:RaiseFundProps
 }
