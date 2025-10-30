@@ -1,4 +1,5 @@
 "use client";
+
 import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,7 +7,6 @@ import { FC, useEffect, useState } from "react";
 
 import { Cross, LoginIcons } from "@/components";
 import { BREAKPOINT_XL } from "@/constant";
-import { useWindowSize } from "@/hooks";
 
 import { HeaderProps } from "./types";
 
@@ -24,12 +24,18 @@ export const Header: FC<HeaderProps> = ({ buttons, logo, menu }) => {
     document.body.style.overflow = menuOpen ? "hidden" : "auto";
   }, [menuOpen]);
 
-  const { width } = useWindowSize();
-
   useEffect(() => {
-    if (width < BREAKPOINT_XL) return;
-    setMenuOpen(false);
-  }, [width]);
+    const handleResize = (): void => {
+      if (window.innerWidth >= BREAKPOINT_XL && menuOpen) {
+        setMenuOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return (): void => window.removeEventListener("resize", handleResize);
+  }, [menuOpen]);
 
   return (
     <nav
@@ -64,6 +70,8 @@ export const Header: FC<HeaderProps> = ({ buttons, logo, menu }) => {
               width={125}
             />
           </div>
+
+          {/* desktop menu */}
           <div className="hidden gap-9 xl:flex">
             {menu.map(({ ariaLabel, href, id, label }) => (
               <Link
@@ -76,6 +84,8 @@ export const Header: FC<HeaderProps> = ({ buttons, logo, menu }) => {
               </Link>
             ))}
           </div>
+
+          {/* desktop buttons */}
           <div className="hidden items-center gap-5 xl:flex">
             <Link
               aria-label={buttons.donateButton.ariaLabel}
@@ -92,17 +102,21 @@ export const Header: FC<HeaderProps> = ({ buttons, logo, menu }) => {
               {buttons.loginButton.label}
             </Link>
           </div>
+
+          {/* mobile hamburger */}
           <button
             aria-label="Toggle menu"
             className="relative z-50 flex flex-col gap-1 xl:hidden"
             onClick={() => setMenuOpen(!menuOpen)}
           >
-            <span className="mr-0  ml-auto inline-block h-1 w-6 rounded-full bg-[#002C5B]" />
+            <span className="mr-0 ml-auto inline-block h-1 w-6 rounded-full bg-[#002C5B]" />
             <span className="inline-block h-1 w-8 rounded-full bg-[#002C5B] transition-all duration-300" />
             <span className="mr-auto ml-0 inline-block h-1 w-6 rounded-full bg-[#002C5B]" />
           </button>
         </div>
       </div>
+
+      {/* mobile overlay menu */}
       {menuOpen && (
         <div className="fixed inset-0 flex h-dvh w-full flex-col bg-[#002C5B] px-4 pt-12.5 pb-4 text-center xl:hidden">
           <div className="w-full">

@@ -1,10 +1,10 @@
 import { Image } from "@/types";
 
 interface NavItem {
+  ariaLabel: string;
+  href: string;
   id: number;
   label: string;
-  href: string;
-  ariaLabel: string;
 }
 
 interface Buttons {
@@ -13,7 +13,7 @@ interface Buttons {
 }
 
 export interface HeaderProps {
+  buttons: Buttons;
   logo: Image;
   menu: NavItem[];
-  buttons: Buttons;
 }
