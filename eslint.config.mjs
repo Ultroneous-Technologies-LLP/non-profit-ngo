@@ -77,6 +77,7 @@ export default tseslint.config(
       "object-shorthand": "error",
       "array-callback-return": "error",
       "no-duplicate-imports": "error",
+      "arrow-body-style": ["error", "as-needed"],
 
       /* ---------------- Import Rules ---------------- */
       "import/default": "error",
