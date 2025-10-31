@@ -1,4 +1,4 @@
-import { FooterProps, HeaderProps, HeroProps } from "@/components";
+import { FooterProps, HeaderProps, HeroProps, WeNeedProps } from "@/components";
 
 export interface LayoutProps {
   footer: FooterProps;
@@ -7,4 +7,5 @@ export interface LayoutProps {
 
 export interface HomePageDataProps {
   hero: HeroProps;
+  weNeed: WeNeedProps;
 }
