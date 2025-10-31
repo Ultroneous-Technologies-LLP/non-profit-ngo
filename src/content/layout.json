@@ -57,7 +57,7 @@
       "href": "/"
     },
     "navLinks": [
-      { "label": "About", "href": "/" },
+      { "label": "About", "href": "#about-us" },
       { "label": "Agenda", "href": "/" },
       { "label": "Partners", "href": "/" },
       { "label": "Testimonials", "href": "/" }

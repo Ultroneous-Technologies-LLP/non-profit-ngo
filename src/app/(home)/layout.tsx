@@ -53,7 +53,7 @@ const RootLayout: FC<PropsWithChildren> = ({ children }) => {
   const { header, footer }: LayoutProps = data;
 
   return (
-    <html className="flex items-center justify-center bg-[#D4D4D4]" lang="en">
+    <html className="flex items-center justify-center scroll-smooth bg-[#D4D4D4]" lang="en">
       <body
         className={clsx(
           "mx-4 mt-6 w-full max-w-400 rounded-2xl bg-[#ECECE2] antialiased shadow-[39.55px_77.44px_191.14px_0_#0000001A] md:mx-6 md:mt-8 xl:m-16 xl:rounded-[29px]",
