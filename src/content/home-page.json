@@ -52,5 +52,29 @@
         "alt": "Children 3"
       }
     }
+  },
+  "aboutUs": {
+    "image": {
+      "src": "/assets/images/about-us.png",
+      "alt": "About us"
+    },
+    "backgroundImage": {
+      "src": "/assets/images/background-rows.png",
+      "alt": "Decorative background rows and columns"
+    },
+    "title": "About Company",
+    "description": "You’re the Hope for others",
+    "longDescription": [
+      {
+        "text": "This is a dedicated non-profit committed to supporting individuals and families in need. We provide essential resources, including food, clothing, shelter, and educational opportunities, to empower those facing challenging circumstances."
+      },
+      {
+        "text": "Our mission is to uplift and bring hope to the less fortunate, fostering a compassionate community where everyone has the chance to thrive. Through generous donations and volunteer efforts, we strive to make a positive impact and create lasting change in the lives of those we serve."
+      }
+    ],
+    "button": {
+      "label": "Discover more",
+      "href": "/"
+    }
   }
 }
