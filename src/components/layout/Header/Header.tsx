@@ -11,23 +11,23 @@ import { BREAKPOINT_XL } from "@/constant";
 import { HeaderProps } from "./types";
 
 export const Header: FC<HeaderProps> = ({ buttons, logo, menu }) => {
-  const [scrolled, setScrolled] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = (): void => setScrolled(window.scrollY > 20);
+    const handleScroll = (): void => setIsScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handleScroll);
     return (): void => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   useEffect(() => {
-    document.body.style.overflow = menuOpen ? "hidden" : "auto";
-  }, [menuOpen]);
+    document.body.style.overflow = isMenuOpen ? "hidden" : "auto";
+  }, [isMenuOpen]);
 
   useEffect(() => {
     const handleResize = (): void => {
-      if (window.innerWidth >= BREAKPOINT_XL && menuOpen) {
-        setMenuOpen(false);
+      if (window.innerWidth >= BREAKPOINT_XL && isMenuOpen) {
+        setIsMenuOpen(false);
       }
     };
 
@@ -35,7 +35,7 @@ export const Header: FC<HeaderProps> = ({ buttons, logo, menu }) => {
     handleResize();
 
     return (): void => window.removeEventListener("resize", handleResize);
-  }, [menuOpen]);
+  }, [isMenuOpen]);
 
   return (
     <nav
@@ -43,9 +43,9 @@ export const Header: FC<HeaderProps> = ({ buttons, logo, menu }) => {
       className={clsx(
         "left-1/2 z-50 mx-auto w-full -translate-x-1/2 transition-all duration-400 ease-linear",
         {
-          "fixed top-0": scrolled && !menuOpen,
-          "relative top-6 xl:top-14": !scrolled && !menuOpen,
-          "fixed inset-0": menuOpen,
+          "fixed top-0": isScrolled && !isMenuOpen,
+          "relative top-6 xl:top-14": !isScrolled && !isMenuOpen,
+          "fixed inset-0": isMenuOpen,
         }
       )}
       role="navigation"
@@ -54,8 +54,8 @@ export const Header: FC<HeaderProps> = ({ buttons, logo, menu }) => {
         className={clsx(
           "mx-4 w-auto rounded-xl transition-transform duration-500 ease-linear md:mx-6 xl:mx-16 2xl:mx-auto 2xl:max-w-348.5",
           {
-            "bg-[#ECECE2] shadow-md backdrop-blur-[22px]": scrolled,
-            "bg-transparent": !scrolled,
+            "bg-[#ECECE2] shadow-md backdrop-blur-[22px]": isScrolled,
+            "bg-transparent": !isScrolled,
           }
         )}
       >
@@ -107,7 +107,7 @@ export const Header: FC<HeaderProps> = ({ buttons, logo, menu }) => {
           <button
             aria-label="Toggle menu"
             className="relative z-50 flex flex-col gap-1 xl:hidden"
-            onClick={() => setMenuOpen(!menuOpen)}
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <span className="bg-primary-blue mr-0 ml-auto inline-block h-1 w-6 rounded-full" />
             <span className="bg-primary-blue inline-block h-1 w-8 rounded-full transition-all duration-300" />
@@ -117,11 +117,11 @@ export const Header: FC<HeaderProps> = ({ buttons, logo, menu }) => {
       </div>
 
       {/* mobile overlay menu */}
-      {menuOpen && (
+      {isMenuOpen && (
         <div className="bg-primary-blue fixed inset-0 flex h-dvh w-full flex-col px-4 pt-12.5 pb-4 text-center xl:hidden">
           <div className="w-full">
             <div className="flex justify-end pb-4">
-              <Cross onClick={() => setMenuOpen(!menuOpen)} />
+              <Cross onClick={() => setIsMenuOpen(!isMenuOpen)} />
             </div>
             <div className="flex h-full flex-col justify-between">
               <div className="space-y-10 text-start">
@@ -131,7 +131,7 @@ export const Header: FC<HeaderProps> = ({ buttons, logo, menu }) => {
                     className="font-segoe-regular block text-4xl/12 font-semibold text-[#ECECE2]"
                     href={href}
                     key={id}
-                    onClick={() => setMenuOpen(false)}
+                    onClick={() => setIsMenuOpen(false)}
                   >
                     {label}
                   </Link>
@@ -140,7 +140,7 @@ export const Header: FC<HeaderProps> = ({ buttons, logo, menu }) => {
                   aria-label={buttons.donateButton.ariaLabel}
                   className="font-segoe-regular bg-primary-yellow text-primary-blue inline-block rounded-full px-10 py-5 text-xl/5 font-semibold"
                   href={buttons.donateButton.href}
-                  onClick={() => setMenuOpen(false)}
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   {buttons.donateButton.label}
                 </Link>
