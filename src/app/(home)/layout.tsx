@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import type { Metadata } from "next";
-import { FC, ReactNode } from "react";
+import { FC, PropsWithChildren } from "react";
 
 import { Footer, Header } from "@/components";
 import { segoeUiFont, segoeUiBoldFont } from "@/constant";
@@ -49,12 +49,9 @@ export const metadata: Metadata = {
   },
 };
 
-interface RootLayoutProps {
-  children: ReactNode;
-}
-
-const RootLayout: FC<RootLayoutProps> = ({ children }) => {
+const RootLayout: FC<PropsWithChildren> = ({ children }) => {
   const { header, footer }: LayoutProps = data;
+
   return (
     <html className="flex items-center justify-center bg-[#D4D4D4]" lang="en">
       <body
@@ -65,7 +62,7 @@ const RootLayout: FC<RootLayoutProps> = ({ children }) => {
         )}
       >
         <Header {...header} />
-        <main className="max-w-414 pt-24">{children}</main>
+        <main className="max-w-414 pt-7.5 md:pt-5 xl:pt-24">{children}</main>
         <Footer {...footer} />
       </body>
     </html>

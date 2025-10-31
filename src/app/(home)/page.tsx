@@ -1,17 +1,14 @@
-import { FC, ReactNode } from "react";
+import { FC, PropsWithChildren } from "react";
 
-interface HomePageProps {
-  children: ReactNode;
-}
+import { Hero } from "@/components/home";
+import data from "@/content/home-page.json";
 
-const Home: FC<HomePageProps> = () => {
-  return (
-    <div className="h-screen pt-10 text-center text-5xl xl:text-8xl">
-      <h1 className="font-segoe-regular">
-        <span>Welcome to Non Profit NGO</span>
-      </h1>
-    </div>
-  );
+import { HomePageDataProps } from "./types";
+
+const Home: FC<PropsWithChildren> = () => {
+  const { hero }: HomePageDataProps = data;
+
+  return <Hero {...hero} />;
 };
 
 export default Home;

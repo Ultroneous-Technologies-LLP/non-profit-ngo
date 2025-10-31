@@ -76,7 +76,7 @@ export const Header: FC<HeaderProps> = ({ buttons, logo, menu }) => {
             {menu.map(({ ariaLabel, href, id, label }) => (
               <Link
                 aria-label={ariaLabel}
-                className="font-segoe-regular text-xl/5 font-semibold text-[#002C5B]"
+                className="font-segoe-regular text-primary-blue text-xl/5 font-semibold"
                 href={href}
                 key={id}
               >
@@ -89,7 +89,7 @@ export const Header: FC<HeaderProps> = ({ buttons, logo, menu }) => {
           <div className="hidden items-center gap-5 xl:flex">
             <Link
               aria-label={buttons.donateButton.ariaLabel}
-              className="font-segoe-regular rounded-full bg-[#EDFCA7] px-6.5 py-5 text-xl/5 font-semibold text-[#002C5B]"
+              className="font-segoe-regular bg-primary-yellow text-primary-blue rounded-full px-6.5 py-5 text-xl/5 font-semibold"
               href={buttons.donateButton.href}
             >
               {buttons.donateButton.label}
@@ -109,16 +109,16 @@ export const Header: FC<HeaderProps> = ({ buttons, logo, menu }) => {
             className="relative z-50 flex flex-col gap-1 xl:hidden"
             onClick={() => setMenuOpen(!menuOpen)}
           >
-            <span className="mr-0 ml-auto inline-block h-1 w-6 rounded-full bg-[#002C5B]" />
-            <span className="inline-block h-1 w-8 rounded-full bg-[#002C5B] transition-all duration-300" />
-            <span className="mr-auto ml-0 inline-block h-1 w-6 rounded-full bg-[#002C5B]" />
+            <span className="bg-primary-blue mr-0 ml-auto inline-block h-1 w-6 rounded-full" />
+            <span className="bg-primary-blue inline-block h-1 w-8 rounded-full transition-all duration-300" />
+            <span className="bg-primary-blue mr-auto ml-0 inline-block h-1 w-6 rounded-full" />
           </button>
         </div>
       </div>
 
       {/* mobile overlay menu */}
       {menuOpen && (
-        <div className="fixed inset-0 flex h-dvh w-full flex-col bg-[#002C5B] px-4 pt-12.5 pb-4 text-center xl:hidden">
+        <div className="bg-primary-blue fixed inset-0 flex h-dvh w-full flex-col px-4 pt-12.5 pb-4 text-center xl:hidden">
           <div className="w-full">
             <div className="flex justify-end pb-4">
               <Cross onClick={() => setMenuOpen(!menuOpen)} />
@@ -138,7 +138,7 @@ export const Header: FC<HeaderProps> = ({ buttons, logo, menu }) => {
                 ))}
                 <Link
                   aria-label={buttons.donateButton.ariaLabel}
-                  className="font-segoe-regular inline-block rounded-full bg-[#EDFCA7] px-10 py-5 text-xl/5 font-semibold text-[#002C5B]"
+                  className="font-segoe-regular bg-primary-yellow text-primary-blue inline-block rounded-full px-10 py-5 text-xl/5 font-semibold"
                   href={buttons.donateButton.href}
                   onClick={() => setMenuOpen(false)}
                 >
