@@ -1,4 +1,11 @@
-import { AboutUsProps, FooterProps, HeaderProps, HeroProps, WeNeedProps } from "@/components";
+import {
+  AboutUsProps,
+  FooterProps,
+  HeaderProps,
+  HeroProps,
+  MostTrustedProps,
+  WeNeedProps,
+} from "@/components";
 
 export interface LayoutProps {
   footer: FooterProps;
@@ -8,5 +15,6 @@ export interface LayoutProps {
 export interface HomePageDataProps {
   aboutUs: AboutUsProps;
   hero: HeroProps;
+  mostTrusted: MostTrustedProps;
   weNeed: WeNeedProps;
 }
