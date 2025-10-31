@@ -3,7 +3,7 @@ import { ElementType, forwardRef } from "react";
 
 import { ContainerProps, SupportedTags } from "./types";
 
-const combinedClass = "mx-auto w-full max-w-367";
+const combinedClass = "mx-auto w-full max-w-360";
 
 export const Container = forwardRef(
   <T extends SupportedTags = "div">(

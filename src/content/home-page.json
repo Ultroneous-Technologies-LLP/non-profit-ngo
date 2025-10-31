@@ -1,0 +1,30 @@
+{
+  "hero": {
+    "heading": "Envision a brighter future for everyone.",
+    "description": "Donating is a noble and selfless act with no downside—every contribution, no matter the size, makes a meaningful impact on the lives of those in need.",
+    "event": {
+      "title": "Join our Upcoming Event",
+      "description": "An enchanting event designed to bring smiles to the faces of those in need.",
+      "button": {
+        "label": "Register",
+        "href": "/"
+      },
+      "image": {
+        "src": "/assets/images/group.png",
+        "alt": "group image"
+      },
+      "playButton": {
+        "src": "/assets/svg/play-button.svg",
+        "alt": "play button"
+      }
+    },
+    "heroImage": {
+      "src": "/assets/images/hero.png",
+      "alt": "hero image"
+    },
+    "backgroundImage": {
+      "src": "/assets/images/background-rows.png",
+      "alt": "background"
+    }
+  }
+}
