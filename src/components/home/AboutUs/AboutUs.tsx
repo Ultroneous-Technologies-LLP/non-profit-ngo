@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
 
-import { Container } from "@/components/common";
+import { Container } from "@/components";
 
 import { AboutUsProps } from "./types";
 

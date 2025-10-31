@@ -8,7 +8,6 @@ import prettierPlugin from "eslint-plugin-prettier";
 import react from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
 import securityPlugin from "eslint-plugin-security";
-import testingLibrary from "eslint-plugin-testing-library";
 import globals from "globals";
 import tseslint from "typescript-eslint";
 
@@ -41,7 +40,6 @@ export default tseslint.config(
       security: securityPlugin,
       perfectionist: perfectionistPlugin,
       prettier: prettierPlugin,
-      "testing-library": testingLibrary,
       "jest-dom": jestDom,
       "@next/next": nextPlugin,
     },
@@ -117,6 +115,7 @@ export default tseslint.config(
       // General Rules
       "no-duplicate-imports": "error",
       "no-console": ["warn", { allow: ["warn", "error"] }],
+      "arrow-body-style": ["error", "as-needed"],
       complexity: ["error", 30],
       "max-depth": ["error", 4],
       "max-lines-per-function": ["error", { max: 200, skipBlankLines: true, skipComments: true }],

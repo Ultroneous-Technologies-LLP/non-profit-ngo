@@ -24,7 +24,7 @@
     },
     "backgroundImage": {
       "src": "/assets/images/background-rows.png",
-      "alt": "background"
+      "alt": "Decorative background rows and columns"
     }
   },
   "weNeed": {
@@ -58,10 +58,6 @@
       "src": "/assets/images/about-us.png",
       "alt": "About us"
     },
-    "backgroundImage": {
-      "src": "/assets/images/background-rows.png",
-      "alt": "Decorative background rows and columns"
-    },
     "title": "About Company",
     "description": "You’re the Hope for others",
     "longDescription": [
@@ -75,6 +71,23 @@
     "button": {
       "label": "Discover more",
       "href": "/"
+    },
+    "backgroundImage": {
+      "src": "/assets/images/background-rows.png",
+      "alt": "Decorative background rows and columns"
+    }
+  },
+  "mostTrusted": {
+    "title": "Most trusted Online Donation Platform",
+    "stats": [
+      { "number": "2.7M+", "label": "Donations" },
+      { "number": "15M+", "label": "Lives Impacted" },
+      { "number": "3000+", "label": "Verified NGO’s" },
+      { "number": "300+", "label": "Corporate Partners" }
+    ],
+    "backgroundImage": {
+      "src": "/assets/images/background-rows.png",
+      "alt": "Decorative background rows pattern"
     }
   }
 }
