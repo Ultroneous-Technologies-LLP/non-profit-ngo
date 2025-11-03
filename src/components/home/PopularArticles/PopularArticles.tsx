@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { FC } from "react";
+import { FC, useEffect, useState } from "react";
 
 import { Container, PopularArticlesProps } from "@/components";
 import { BREAKPOINT_XL } from "@/constant";
@@ -16,7 +16,17 @@ export const PopularArticles: FC<PopularArticlesProps> = ({
   title,
   backgroundImage,
 }) => {
+  const [isMounted, setIsMounted] = useState(false);
+
   const { width } = useWindowSize();
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return null;
+  }
   const isMobile = width < BREAKPOINT_XL;
 
   return (

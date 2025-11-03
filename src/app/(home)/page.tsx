@@ -3,6 +3,7 @@ import { FC, PropsWithChildren } from "react";
 import {
   AboutUs,
   GiveMonthly,
+  HappyFaces,
   Hero,
   MarqueeAnimation,
   MostTrusted,
@@ -26,6 +27,7 @@ const Home: FC<PropsWithChildren> = () => {
     marqueeAnimation,
     raiseFund,
     popularArticles,
+    happyFaces,
   }: HomePageDataProps = data;
 
   return (
@@ -39,6 +41,7 @@ const Home: FC<PropsWithChildren> = () => {
       <MarqueeAnimation {...marqueeAnimation} />
       <RaiseFund {...raiseFund} />
       <PopularArticles {...popularArticles} />
+      <HappyFaces {...happyFaces} />
     </>
   );
 };
