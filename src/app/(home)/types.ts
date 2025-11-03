@@ -2,6 +2,7 @@ import {
   AboutUsProps,
   FooterProps,
   GiveMonthlyProps,
+  HappyFacesProps,
   HeaderProps,
   HeroProps,
   MarqueeAnimationProps,
@@ -20,6 +21,7 @@ export interface LayoutProps {
 export interface HomePageDataProps {
   aboutUs: AboutUsProps;
   giveMonthly: GiveMonthlyProps;
+  happyFaces: HappyFacesProps;
   hero: HeroProps;
   marqueeAnimation: MarqueeAnimationProps;
   mostTrusted: MostTrustedProps;

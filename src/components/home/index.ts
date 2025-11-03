@@ -7,3 +7,4 @@ export * from "./SupportFundraiser";
 export * from "./MarqueeAnimation";
 export * from "./RaiseFund";
 export * from "./PopularArticles";
+export * from "./HappyFaces";
