@@ -5,3 +5,4 @@ export * from "./MostTrusted";
 export * from "./GiveMonthly";
 export * from "./SupportFundraiser";
 export * from "./MarqueeAnimation";
+export * from "./RaiseFund";

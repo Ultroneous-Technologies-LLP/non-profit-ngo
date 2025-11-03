@@ -6,6 +6,7 @@ import {
   HeroProps,
   MarqueeAnimationProps,
   MostTrustedProps,
+  RaiseFundProps,
   SupportFundraiserProps,
   WeNeedProps,
 } from "@/components";
@@ -21,6 +22,7 @@ export interface HomePageDataProps {
   hero: HeroProps;
   marqueeAnimation: MarqueeAnimationProps;
   mostTrusted: MostTrustedProps;
+  raiseFund: RaiseFundProps;
   supportFundraiser: SupportFundraiserProps;
   weNeed: WeNeedProps;
 }

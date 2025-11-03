@@ -206,5 +206,19 @@
         "alt": "Group of Children"
       }
     ]
+  },
+  "raiseFund": {
+    "title": "Raise Fund for your Cause",
+    "description": "Raising funds isn't just about the money; it's about raising awareness and creating a ripple effect of kindness and generosity. Together, we can tackle challenges, uplift communities, and make a lasting impact.",
+    "image": {
+      "src": "/assets/images/raise-fund.avif",
+      "alt": "Raise fund illustration"
+    },
+    "enrollButton": { "link": "/", "label": "Enroll with Us" },
+    "fundForNGOButton": { "link": "/", "label": "Raise Fund for NGO’s" },
+    "background": {
+      "src": "/assets/images/background-rows.avif",
+      "alt": "Decorative background rows and columns pattern"
+    }
   }
 }

@@ -6,6 +6,7 @@ import {
   Hero,
   MarqueeAnimation,
   MostTrusted,
+  RaiseFund,
   SupportFundraiser,
   WeNeed,
 } from "@/components";
@@ -22,6 +23,7 @@ const Home: FC<PropsWithChildren> = () => {
     giveMonthly,
     supportFundraiser,
     marqueeAnimation,
+    raiseFund,
   }: HomePageDataProps = data;
 
   return (
@@ -33,6 +35,7 @@ const Home: FC<PropsWithChildren> = () => {
       <GiveMonthly {...giveMonthly} />
       <SupportFundraiser {...supportFundraiser} />
       <MarqueeAnimation {...marqueeAnimation} />
+      <RaiseFund {...raiseFund} />
     </>
   );
 };
