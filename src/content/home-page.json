@@ -220,5 +220,46 @@
       "src": "/assets/images/background-rows.avif",
       "alt": "Decorative background rows and columns pattern"
     }
+  },
+  "popularArticles": {
+    "title": "Our most popular articles",
+    "mainArticle": {
+      "image": "/assets/images/group-of-children.avif",
+      "category": "Blog | Power of Donation",
+      "title": "Clear Reasoning Sparks Transformative Change: The Power of Your Donation",
+      "description": "When a clear stream of reasoning awakens the drive to give, transformative change follows. Your thoughtful donation, guided by purpose and clarity",
+      "date": "02 Feb, 2024",
+      "alt": ""
+    },
+    "sideArticles": [
+      {
+        "id": 1,
+        "image": "/assets/images/change-in-life.avif",
+        "category": "Blog | Change in Life",
+        "title": "Awaken Change with Purposeful Giving: The Impact of Informed",
+        "description": "When you give with intention and insight, your donations can ignite significant positive change",
+        "alt": ""
+      },
+      {
+        "id": 2,
+        "image": "/assets/images/group-of-two-girl.avif",
+        "category": "Blog | Empowerment",
+        "title": "Empower Transformation Through Insightful Donations",
+        "description": "Harness the power of well-informed giving to create meaningfuland lasting change in your",
+        "alt": ""
+      },
+      {
+        "id": 3,
+        "image": "/assets/images/group-of-people-who-is-collect-wast.avif",
+        "category": "Blog | Waste Management",
+        "title": "Guided by Reason: The True Potential of Your Donations",
+        "description": "See how strategic and thoughtful donations can lead to powerful outcomes and reshape the future",
+        "alt": ""
+      }
+    ],
+    "backgroundImage": {
+      "src": "/assets/images/background-rows.avif",
+      "alt": "Decorative background rows and columns pattern"
+    }
   }
 }

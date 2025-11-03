@@ -6,6 +6,7 @@ import {
   Hero,
   MarqueeAnimation,
   MostTrusted,
+  PopularArticles,
   RaiseFund,
   SupportFundraiser,
   WeNeed,
@@ -24,6 +25,7 @@ const Home: FC<PropsWithChildren> = () => {
     supportFundraiser,
     marqueeAnimation,
     raiseFund,
+    popularArticles,
   }: HomePageDataProps = data;
 
   return (
@@ -36,6 +38,7 @@ const Home: FC<PropsWithChildren> = () => {
       <SupportFundraiser {...supportFundraiser} />
       <MarqueeAnimation {...marqueeAnimation} />
       <RaiseFund {...raiseFund} />
+      <PopularArticles {...popularArticles} />
     </>
   );
 };
