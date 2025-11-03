@@ -78,6 +78,7 @@ export default tseslint.config(
       "array-callback-return": "error",
       "no-duplicate-imports": "error",
       "arrow-body-style": ["error", "as-needed"],
+      "@typescript-eslint/no-magic-numbers": "error",
 
       /* ---------------- Import Rules ---------------- */
       "import/default": "error",
@@ -162,14 +163,9 @@ export default tseslint.config(
           format: ["PascalCase"],
           prefix: ["is", "should", "has", "can", "did", "will", "show", "hide", "use", "does"],
         },
-        // ✅ Allow PascalCase imports for React/Next built-ins
         {
           selector: "import",
           format: ["camelCase", "PascalCase"],
-          filter: {
-            regex: "^(Image|Link|Head|Fragment|Script)$",
-            match: true,
-          },
         },
       ],
 

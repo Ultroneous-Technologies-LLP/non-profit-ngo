@@ -7,7 +7,7 @@ import { MostTrustedProps } from "./type";
 
 export const MostTrusted: FC<MostTrustedProps> = ({ backgroundImage, stats, title }) => (
   <Container
-    backgroundClassName="mx-4 xl:mx-15 pb-25 xl:pb-40 overflow-hidden"
+    backgroundClassName="mx-4 xl:mx-15 pb-20.5 md:pb-21.5 xl:pb-40 overflow-hidden"
     className="bg-primary-yellow relative rounded-[20px] py-6 xl:rounded-[60px] xl:py-17.5"
   >
     <h2 className="font-segoe-regular text-primary-blue z-10 mx-auto w-full pb-8 text-center text-[32px]/10 font-semibold md:max-w-100 xl:max-w-140 xl:pb-15 xl:text-[60px]/18.5">

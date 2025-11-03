@@ -1,12 +1,12 @@
 import { FC, PropsWithChildren } from "react";
 
-import { AboutUs, Hero, MostTrusted, WeNeed } from "@/components";
+import { AboutUs, GiveMonthly, Hero, MostTrusted, WeNeed } from "@/components";
 import data from "@/content/home-page.json";
 
 import { HomePageDataProps } from "./types";
 
 const Home: FC<PropsWithChildren> = () => {
-  const { hero, weNeed, aboutUs, mostTrusted }: HomePageDataProps = data;
+  const { hero, weNeed, aboutUs, mostTrusted, giveMonthly }: HomePageDataProps = data;
 
   return (
     <>
@@ -14,6 +14,7 @@ const Home: FC<PropsWithChildren> = () => {
       <WeNeed {...weNeed} />
       <AboutUs {...aboutUs} />
       <MostTrusted {...mostTrusted} />
+      <GiveMonthly {...giveMonthly} />
     </>
   );
 };
