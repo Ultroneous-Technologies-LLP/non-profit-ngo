@@ -1,11 +1,6 @@
-import { Image } from "@/types";
+import { Image, ViewMoreButton } from "@/types";
 
-interface ViewMore {
-  label: string;
-  link: string;
-}
-
-interface MissionType extends ViewMore {
+interface MissionType extends ViewMoreButton {
   id: number;
   image: string;
   percent: number;
@@ -23,5 +18,5 @@ export interface GiveMonthlyProps {
   description: string;
   missions: MissionType[];
   title: string;
-  viewMore: ViewMore;
+  viewMore: ViewMoreButton;
 }
