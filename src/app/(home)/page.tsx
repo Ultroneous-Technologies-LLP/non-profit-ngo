@@ -1,13 +1,28 @@
 import { FC, PropsWithChildren } from "react";
 
-import { AboutUs, GiveMonthly, Hero, MostTrusted, SupportFundraiser, WeNeed } from "@/components";
+import {
+  AboutUs,
+  GiveMonthly,
+  Hero,
+  MarqueeAnimation,
+  MostTrusted,
+  SupportFundraiser,
+  WeNeed,
+} from "@/components";
 import data from "@/content/home-page.json";
 
 import { HomePageDataProps } from "./types";
 
 const Home: FC<PropsWithChildren> = () => {
-  const { hero, weNeed, aboutUs, mostTrusted, giveMonthly, supportFundraiser }: HomePageDataProps =
-    data;
+  const {
+    hero,
+    weNeed,
+    aboutUs,
+    mostTrusted,
+    giveMonthly,
+    supportFundraiser,
+    marqueeAnimation,
+  }: HomePageDataProps = data;
 
   return (
     <>
@@ -17,6 +32,7 @@ const Home: FC<PropsWithChildren> = () => {
       <MostTrusted {...mostTrusted} />
       <GiveMonthly {...giveMonthly} />
       <SupportFundraiser {...supportFundraiser} />
+      <MarqueeAnimation {...marqueeAnimation} />
     </>
   );
 };
