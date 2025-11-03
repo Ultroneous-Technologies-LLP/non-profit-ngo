@@ -1,8 +1,10 @@
 import { JSX, SVGProps } from "react";
 
+import { ICON_SIZE_32 } from "./constant";
+
 export const LoginIcons = ({
-  width = 32,
-  height = 32,
+  width = ICON_SIZE_32,
+  height = ICON_SIZE_32,
   ...svgProps
 }: SVGProps<SVGSVGElement>): JSX.Element => (
   <svg
@@ -10,7 +12,7 @@ export const LoginIcons = ({
     fill="none"
     height={height}
     role="img"
-    viewBox="0 0 32 32"
+    viewBox={`0 0 ${ICON_SIZE_32} ${ICON_SIZE_32}`}
     width={width}
     xmlns="http://www.w3.org/2000/svg"
     {...svgProps}

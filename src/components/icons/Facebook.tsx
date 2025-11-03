@@ -1,15 +1,17 @@
 import { JSX, SVGProps } from "react";
 
+import { ICON_SIZE_10, ICON_SIZE_15 } from "./constant";
+
 export const Facebook = ({
-  width = 10,
-  height = 15,
+  width = ICON_SIZE_10,
+  height = ICON_SIZE_15,
   ...svgProps
 }: SVGProps<SVGSVGElement>): JSX.Element => (
   <svg
     fill="none"
     height={height}
     role="img"
-    viewBox="0 0 10 15"
+    viewBox={`0 0 ${ICON_SIZE_10} ${ICON_SIZE_15}`}
     width={width}
     xmlns="http://www.w3.org/2000/svg"
     {...svgProps}

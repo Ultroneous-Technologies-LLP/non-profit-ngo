@@ -1,15 +1,17 @@
 import { JSX, SVGProps } from "react";
 
+import { ICON_SIZE_12, ICON_SIZE_17 } from "./constant";
+
 export const Youtube = ({
-  width = 17,
-  height = 12,
+  width = ICON_SIZE_17,
+  height = ICON_SIZE_12,
   ...svgProps
 }: SVGProps<SVGSVGElement>): JSX.Element => (
   <svg
     fill="none"
     height={height}
     role="img"
-    viewBox="0 0 17 12"
+    viewBox={`0 0 ${ICON_SIZE_17} ${ICON_SIZE_12}`}
     width={width}
     xmlns="http://www.w3.org/2000/svg"
     {...svgProps}

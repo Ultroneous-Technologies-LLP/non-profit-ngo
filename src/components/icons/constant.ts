@@ -1,0 +1,9 @@
+export const ICON_SIZE_10 = 10;
+export const ICON_SIZE_11 = 11;
+export const ICON_SIZE_12 = 12;
+export const ICON_SIZE_13 = 13;
+export const ICON_SIZE_14 = 14;
+export const ICON_SIZE_15 = 15;
+export const ICON_SIZE_17 = 17;
+export const ICON_SIZE_26 = 26;
+export const ICON_SIZE_32 = 32;

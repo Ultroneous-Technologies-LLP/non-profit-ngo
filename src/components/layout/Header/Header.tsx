@@ -10,12 +10,14 @@ import { BREAKPOINT_XL } from "@/constant";
 
 import { HeaderProps } from "./types";
 
+const SCROLL_Y = 20;
+
 export const Header: FC<HeaderProps> = ({ buttons, logo, menu }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = (): void => setIsScrolled(window.scrollY > 20);
+    const handleScroll = (): void => setIsScrolled(window.scrollY > SCROLL_Y);
     window.addEventListener("scroll", handleScroll);
     return (): void => window.removeEventListener("scroll", handleScroll);
   }, []);
