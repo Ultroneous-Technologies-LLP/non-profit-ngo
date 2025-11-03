@@ -38,7 +38,7 @@
     "secondText": {
       "titles": [
         { "text": "NEED", "color": "text-primary-blue" },
-        { "text": "YOUR", "color": "text-[#8999AA]" }
+        { "text": "YOUR", "color": "text-cool-grey" }
       ],
       "image": {
         "src": "/assets/images/children-2.png",
@@ -46,7 +46,7 @@
       }
     },
     "thirdText": {
-      "title": { "text": "SUPPORT", "color": "text-[#8999AA]" },
+      "title": { "text": "SUPPORT", "color": "text-cool-grey" },
       "image": {
         "src": "/assets/images/children-3.png",
         "alt": "Children 3"

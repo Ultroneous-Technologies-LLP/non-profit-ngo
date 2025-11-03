@@ -26,7 +26,7 @@ export const HappyFaces: FC<HappyFacesProps> = ({ sections, title }) => {
 
   return (
     <Container className="relative overflow-hidden pb-21.5 md:pb-22 xl:pb-40">
-      <h2 className="font-segoe-regular text-primary-blue z-10 px-4 pb-8 text-center text-[32px]/10 font-semibold md:px-6 xl:px-15 xl:pt-13 xl:pb-15 xl:text-6xl/18.5">
+      <h2 className="font-segoe-regular text-primary-blue text-32px/10 z-10 px-4 pb-8 text-center font-semibold md:px-6 xl:px-15 xl:pt-13 xl:pb-15 xl:text-6xl/18.5">
         <span>{title}</span>
       </h2>
       {!isMobile ? <DeskTopUi sections={sections} /> : <MobileSlider sections={sections} />}

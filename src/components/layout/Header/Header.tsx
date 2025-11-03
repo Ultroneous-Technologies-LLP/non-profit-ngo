@@ -56,7 +56,7 @@ export const Header: FC<HeaderProps> = ({ buttons, logo, menu }) => {
         className={clsx(
           "mx-4 w-auto rounded-xl transition-transform duration-500 ease-linear md:mx-6 xl:mx-16 2xl:mx-auto 2xl:max-w-348.5",
           {
-            "bg-[#ECECE2] shadow-md backdrop-blur-[22px]": isScrolled,
+            "bg-alabaster shadow-md backdrop-blur-[22px]": isScrolled,
             "bg-transparent": !isScrolled,
           }
         )}
@@ -130,7 +130,7 @@ export const Header: FC<HeaderProps> = ({ buttons, logo, menu }) => {
                 {menu.map(({ id, label, href, ariaLabel }) => (
                   <Link
                     aria-label={ariaLabel}
-                    className="font-segoe-regular block text-4xl/12 font-semibold text-[#ECECE2]"
+                    className="font-segoe-regular text-alabaster block text-4xl/12 font-semibold"
                     href={href}
                     key={id}
                     onClick={() => setIsMenuOpen(false)}
@@ -151,7 +151,7 @@ export const Header: FC<HeaderProps> = ({ buttons, logo, menu }) => {
                 <LoginIcons />
                 <Link
                   aria-label={buttons.loginButton.ariaLabel}
-                  className="font-segoe-regular text-4xl/12 font-semibold text-[#ECECE2]"
+                  className="font-segoe-regular text-alabaster text-4xl/12 font-semibold"
                   href={buttons.loginButton.href}
                 >
                   {buttons.loginButton.label}

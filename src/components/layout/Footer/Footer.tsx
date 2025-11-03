@@ -37,7 +37,7 @@ export const Footer = ({
         />
       </div>
       <div className="pb-3 xl:pb-8.5">
-        <h2 className="font-segoe-regular text-primary-blue z-10 mx-auto w-full max-w-77.5 pb-3 text-center text-[32px]/10 font-semibold xl:max-w-fit xl:pb-5 xl:text-[61px]/15">
+        <h2 className="font-segoe-regular text-primary-blue text-32px/10 z-10 mx-auto w-full max-w-77.5 pb-3 text-center font-semibold xl:max-w-fit xl:pb-5 xl:text-6xl/15">
           <span>{heading}</span>
         </h2>
         <p className="font-segoe-regular z-10 mx-auto max-w-77.5 text-center text-xs/4.5 xl:max-w-201.5 xl:text-base/6">
@@ -85,12 +85,12 @@ export const Footer = ({
           ))}
         </div>
       </div>
-      <span className="font-segoe-regular z-10 block text-center text-xs/4 font-semibold text-[#8D8D8D] xl:text-sm/3.5">
+      <span className="font-segoe-regular text-philippine-gray z-10 block text-center text-xs/4 font-semibold xl:text-sm/3.5">
         © {currentYear} {companyName}
       </span>
       <Image
         alt={backgroundImage.alt}
-        className="absolute top-0 z-0 h-[678px] w-[1468px] object-contain xl:top-5 xl:left-11"
+        className="absolute top-0 z-0 h-169.5 w-367 object-contain xl:top-5 xl:left-11"
         fill
         src={backgroundImage.src}
       />

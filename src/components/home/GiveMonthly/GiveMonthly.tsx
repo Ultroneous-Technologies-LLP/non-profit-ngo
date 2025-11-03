@@ -19,7 +19,7 @@ export const GiveMonthly: FC<GiveMonthlyProps> = ({
     className="relative overflow-hidden"
   >
     <div className="z-10 pt-4 md:pt-3 xl:pt-8">
-      <h2 className="font-segoe-regular text-primary-blue pb-2 text-center text-[32px]/10 font-semibold xl:pb-2.5 xl:text-6xl/20">
+      <h2 className="font-segoe-regular text-primary-blue text-32px/10 pb-2 text-center font-semibold xl:pb-2.5 xl:text-6xl/20">
         <span>{title}</span>
       </h2>
       <p className="font-segoe-regular mx-auto w-full max-w-205 pb-8 text-center text-xs/4.5 xl:pb-17 xl:text-base/6">
@@ -74,7 +74,7 @@ export const GiveMonthly: FC<GiveMonthlyProps> = ({
     </div>
     <Image
       alt={backgroundImage.alt}
-      className="absolute z-0 xl:top-2.5! xl:left-11! xl:h-[374px]! xl:w-[1440px]!"
+      className="absolute z-0 xl:top-2.5! xl:left-11! xl:h-93.5! xl:w-360!"
       fill
       src={backgroundImage.src}
     />

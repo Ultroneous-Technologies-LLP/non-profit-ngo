@@ -13,10 +13,10 @@ export const DesktopArticles: FC<PopularArticlesProps> = ({ mainArticle, sideArt
       <h4 className="font-segoe-regular pb-4 text-4xl/normal font-semibold">
         <span>{mainArticle.title}</span>
       </h4>
-      <p className="font-segoe-regular line-clamp-2 h-15 overflow-hidden pb-4 text-lg/normal text-ellipsis text-[#8D8D8D]">
+      <p className="font-segoe-regular text-philippine-gray line-clamp-2 h-15 overflow-hidden pb-4 text-lg/normal text-ellipsis">
         <span>{mainArticle.description}</span>
       </p>
-      <p className="font-segoe-regular line-clamp-2 text-base/normal text-ellipsis text-[#8D8D8D]">
+      <p className="font-segoe-regular text-philippine-gray line-clamp-2 text-base/normal text-ellipsis">
         <span>{mainArticle.date}</span>
       </p>
     </div>
@@ -33,7 +33,7 @@ export const DesktopArticles: FC<PopularArticlesProps> = ({ mainArticle, sideArt
             <h4 className="font-segoe-regular line-clamp-2 pb-1 text-lg/normal font-semibold text-ellipsis">
               <span>{article.title}</span>
             </h4>
-            <p className="font-segoe-regular line-clamp-2 text-xs/normal text-ellipsis text-[#8D8D8D]">
+            <p className="font-segoe-regular text-philippine-gray line-clamp-2 text-xs/normal text-ellipsis">
               <span>{article.description}</span>
             </p>
           </div>

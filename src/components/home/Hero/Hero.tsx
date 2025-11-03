@@ -21,11 +21,11 @@ export const Hero: FC<HeroProps> = ({
       <p className="font-segoe-regular w-full max-w-150 pb-6 text-sm/5 xl:text-base/6">
         <span>{description}</span>
       </p>
-      <div className="mx-auto flex w-full flex-col gap-4 rounded-[40px] bg-white/25 p-4 md:mr-auto md:ml-0 md:w-fit md:flex-row xl:gap-6.5 xl:px-5 xl:py-5.5">
+      <div className="rounded-40px mx-auto flex w-full flex-col gap-4 bg-white/25 p-4 md:mr-auto md:ml-0 md:w-fit md:flex-row xl:gap-6.5 xl:px-5 xl:py-5.5">
         <div className="relative w-full md:w-fit">
           <Image
             alt={event.image.alt}
-            className="h-35 w-full rounded-[20px] object-cover xl:h-40.5"
+            className="rounded-20px h-35 w-full object-cover xl:h-40.5"
             height={163}
             src={event.image.src}
             width={159}
@@ -46,7 +46,7 @@ export const Hero: FC<HeroProps> = ({
             <span>{event.description}</span>
           </p>
           <Link
-            className="bg-primary-yellow font-segoe-regular text-primary-blue hover:border-primary-blue inline-block rounded-[40px] border border-transparent px-8.5 py-2.5 text-sm/5 font-semibold transition-colors duration-500 ease-in-out hover:bg-transparent xl:px-12 xl:text-lg/6.5"
+            className="bg-primary-yellow font-segoe-regular text-primary-blue hover:border-primary-blue rounded-40px inline-block border border-transparent px-8.5 py-2.5 text-sm/5 font-semibold transition-colors duration-500 ease-in-out hover:bg-transparent xl:px-12 xl:text-lg/6.5"
             href={event.button.href}
           >
             {event.button.label}
@@ -59,7 +59,7 @@ export const Hero: FC<HeroProps> = ({
     </div>
     <Image
       alt={backgroundImage.alt}
-      className="absolute top-0 left-0 z-0 !h-138.5 !w-232 xl:top-5 xl:!left-11 xl:!h-[409px] xl:!w-[1468px]"
+      className="absolute top-0 left-0 z-0 h-138.5 w-232! xl:top-5 xl:left-11 xl:h-102! xl:w-367!"
       fill
       src={backgroundImage.src}
     />
