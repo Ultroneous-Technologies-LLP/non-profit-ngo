@@ -16,11 +16,11 @@ export const RaiseFund: FC<RaiseFundProps> = ({
 }) => (
   <Container
     backgroundClassName="mx-4 md:mx-6 xl:mx-15 pb-22.5 xl:pb-40 overflow-hidden"
-    className="bg-primary-yellow relative w-full rounded-[20px] p-6 md:grid md:grid-cols-[minmax(0,352px)_minmax(0,240px)]
-      md:gap-x-8 xl:grid-cols-[minmax(0,705px)_minmax(0,408px)] xl:gap-x-23 xl:rounded-[60px] xl:py-17 xl:pr-12 xl:pl-21"
+    className="bg-primary-yellow rounded-20px xl:rounded-60px relative w-full p-6 md:grid
+      md:grid-cols-[minmax(0,352px)_minmax(0,240px)] md:gap-x-8 xl:grid-cols-[minmax(0,705px)_minmax(0,408px)] xl:gap-x-23 xl:py-17 xl:pr-12 xl:pl-21"
   >
     <div className="z-10 w-full md:col-start-1 md:col-end-1">
-      <h2 className="font-segoe-regular text-primary-blue mx-auto pb-2 text-center text-[32px]/10 font-semibold md:mr-auto md:ml-0 md:text-start xl:pb-2.5 xl:text-6xl/18.5">
+      <h2 className="font-segoe-regular text-primary-blue text-32px/10 mx-auto pb-2 text-center font-semibold md:mr-auto md:ml-0 md:text-start xl:pb-2.5 xl:text-6xl/18.5">
         {title}
       </h2>
       <p className="font-segoe-regular pb-8 text-center text-xs/4.5 md:pb-0 md:text-start xl:text-base/6">

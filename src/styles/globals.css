@@ -6,6 +6,15 @@
 
   --color-primary-yellow: #edfca7;
   --color-primary-blue: #002c5b;
+  --color-philippine-gray: #8d8d8d;
+  --color-alabaster: #ecece2;
+  --color-cool-grey: #8999aa;
+
+  --text-32px: 32px;
+
+  --radius-20px: 20px;
+  --radius-40px: 40px;
+  --radius-60px: 60px;
 
   --animate-marquee: marquee 20s linear infinite;
 }

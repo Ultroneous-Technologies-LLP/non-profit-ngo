@@ -49,7 +49,7 @@ export const MobileSliderArticles: FC<PopularArticlesProps> = ({ mainArticle, si
                 <span>{category}</span>
               </h3>
               {date && (
-                <p className="text-[#8D8D8D]">
+                <p className="text-philippine-gray">
                   <span>{date}</span>
                 </p>
               )}
@@ -57,7 +57,7 @@ export const MobileSliderArticles: FC<PopularArticlesProps> = ({ mainArticle, si
             <h4 className="font-segoe-regular pb-1 text-xs/4 font-semibold">
               <span>{title}</span>
             </h4>
-            <p className="font-segoe-regular line-clamp-3 text-xs/4.5 text-ellipsis text-[#8D8D8D]">
+            <p className="font-segoe-regular text-philippine-gray line-clamp-3 text-xs/4.5 text-ellipsis">
               <span>{description}</span>
             </p>
           </SwiperSlide>
@@ -65,8 +65,8 @@ export const MobileSliderArticles: FC<PopularArticlesProps> = ({ mainArticle, si
       </Swiper>
       <div className="mt-8 flex justify-center">
         <input
-          className="[&::-webkit-slider-thumb]:bg-primary-blue h-0.5! w-full max-w-30 cursor-pointer appearance-none rounded-full 
-            bg-[#8D8D8D] transition-all duration-500
+          className="[&::-webkit-slider-thumb]:bg-primary-blue bg-philippine-gray h-0.5! w-full max-w-30 cursor-pointer appearance-none 
+            rounded-full transition-all duration-500
             [&::-webkit-slider-thumb]:h-1.5! [&::-webkit-slider-thumb]:w-4! [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:rounded-full"
           max="4"
           min="0"
