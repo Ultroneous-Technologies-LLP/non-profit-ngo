@@ -5,6 +5,7 @@ import {
   Hero,
   MarqueeAnimation,
   MostTrusted,
+  PopularArticles,
   RaiseFund,
   SupportFundraiser,
   WeNeed,
@@ -22,6 +23,7 @@ const Home = () => {
     supportFundraiser,
     marqueeAnimation,
     raiseFund,
+    popularArticles,
   }: HomePageProps = data;
 
   return (
@@ -34,6 +36,7 @@ const Home = () => {
       <SupportFundraiser {...supportFundraiser} />
       <MarqueeAnimation {...marqueeAnimation} />
       <RaiseFund {...raiseFund} />
+      <PopularArticles {...popularArticles} />
     </>
   );
 };

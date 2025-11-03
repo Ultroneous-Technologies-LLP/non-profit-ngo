@@ -6,6 +6,7 @@ import {
   HeroProps,
   MarqueeAnimationProps,
   MostTrustedProps,
+  PopularArticlesProps,
   RaiseFundProps,
   SupportFundraiserProps,
   WeNeedProps,
@@ -24,5 +25,6 @@ export interface HomePageProps {
   giveMonthly: GiveMonthlyProps;
   supportFundraiser: SupportFundraiserProps;
   marqueeAnimation: MarqueeAnimationProps;
-  raiseFund:RaiseFundProps
+  raiseFund: RaiseFundProps
+  popularArticles: PopularArticlesProps;
 }
