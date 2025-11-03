@@ -6,4 +6,19 @@
 
   --color-primary-yellow: #edfca7;
   --color-primary-blue: #002c5b;
+
+  --animate-marquee: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee:hover .marquee__inner {
+  animation-play-state: paused;
 }

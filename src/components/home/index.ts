@@ -4,3 +4,4 @@ export * from "./AboutUs";
 export * from "./MostTrusted";
 export * from "./GiveMonthly";
 export * from "./SupportFundraiser";
+export * from "./MarqueeAnimation";
