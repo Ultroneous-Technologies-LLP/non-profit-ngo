@@ -1,8 +1,7 @@
-import Image from "next/image";
 import { FC } from "react";
 
 import { Container, Title, UpRightArrow } from "@/components";
-import { LinkButton } from "@/components/common";
+import { LinkButton, LinkButtonVariantEnum, NextImageWithFallback } from "@/components/common";
 
 import { ProgressCircle } from "./ProgressCircle";
 import { GiveMonthlyProps } from "./types";
@@ -35,7 +34,7 @@ export const GiveMonthly: FC<GiveMonthlyProps> = ({
               <span>{subtitle}</span>
             </h4>
             <div className="relative">
-              <Image
+              <NextImageWithFallback
                 alt={subtitle}
                 className="h-60 w-81.5 md:h-35 md:w-48 xl:h-71 xl:w-95"
                 height={285}
@@ -52,7 +51,7 @@ export const GiveMonthly: FC<GiveMonthlyProps> = ({
             <LinkButton
               className="rounded-full px-6.5 py-2.5 xl:px-5.5"
               href={link}
-              variant="primaryYellow"
+              variant={LinkButtonVariantEnum.PRIMARY_YELLOW}
             >
               {label}
             </LinkButton>
@@ -64,13 +63,13 @@ export const GiveMonthly: FC<GiveMonthlyProps> = ({
       <LinkButton
         className="group flex! w-full items-end justify-center gap-3.5 rounded-full px-8.5 py-2.5 md:w-fit md:items-center"
         href={viewMore.link}
-        variant="primaryBlue"
+        variant={LinkButtonVariantEnum.PRIMARY_BLUE}
       >
         <span>{viewMore.label}</span>
         <UpRightArrow className="text-primary-yellow group-hover:text-primary-blue transition-colors duration-500 ease-in-out" />
       </LinkButton>
     </div>
-    <Image
+    <NextImageWithFallback
       alt={backgroundImage.alt}
       className="absolute z-0 xl:top-2.5! xl:left-11! xl:h-93.5! xl:w-360!"
       fill

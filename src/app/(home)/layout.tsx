@@ -2,7 +2,7 @@ import clsx from "clsx";
 import type { Metadata } from "next";
 import { FC, PropsWithChildren } from "react";
 
-import { Footer, Header } from "@/components";
+import { Footer, Header, Icon } from "@/components";
 import { segoeUiFont, segoeUiBoldFont } from "@/constant";
 import data from "@/content/layout.json";
 
@@ -13,6 +13,16 @@ export const metadata: Metadata = {
   title: "NGO Website Design | Non-Profit Charity Landing Page UI",
   description:
     "Modern NGO website UI design for non-profits and charities. Clean homepage concept focused on donations, fundraising, and global humanitarian support.",
+  keywords: [
+    "#NGOWebsite",
+    "#CharityDesign",
+    "#UIDesign",
+    "#NonProfitWeb",
+    "#FundraisingUI",
+    "#WebDesign",
+    "#LandingPage",
+    "#SocialImpact",
+  ],
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
@@ -50,7 +60,19 @@ export const metadata: Metadata = {
 };
 
 const RootLayout: FC<PropsWithChildren> = ({ children }) => {
-  const { header, footer }: LayoutProps = data;
+  const { header, footer }: LayoutProps = {
+    ...data,
+    footer: {
+      ...data.footer,
+      socialSection: {
+        ...data.footer.socialSection,
+        links: data.footer.socialSection.links.map((link) => ({
+          ...link,
+          icon: link.icon as Icon,
+        })),
+      },
+    },
+  };
 
   return (
     <html className="flex items-center justify-center scroll-smooth bg-[#D4D4D4]" lang="en">

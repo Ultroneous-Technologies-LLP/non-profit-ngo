@@ -4,12 +4,13 @@ import clsx from "clsx";
 import Link from "next/link";
 import { JSX } from "react";
 
+import { LinkButtonVariantEnum } from "./enum";
 import { LinkButtonProps } from "./types";
 
 export const LinkButton = ({
   href,
   children,
-  variant = "primaryYellow",
+  variant = LinkButtonVariantEnum.PRIMARY_YELLOW,
   className,
   isNormalLink = false,
   onClick,

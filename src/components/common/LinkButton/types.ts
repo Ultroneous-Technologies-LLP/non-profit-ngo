@@ -1,11 +1,11 @@
 import { ReactNode } from "react";
 
-import { LinkButtonEnum } from "./enum";
+import { LinkButtonVariantEnum } from "./enum";
 
 type Variant =
-  | LinkButtonEnum.PRIMARY_BLUE
-  | LinkButtonEnum.PRIMARY_YELLOW
-  | LinkButtonEnum.OUTLINE_BLUE;
+  | LinkButtonVariantEnum.PRIMARY_BLUE
+  | LinkButtonVariantEnum.PRIMARY_YELLOW
+  | LinkButtonVariantEnum.OUTLINE_BLUE;
 
 export interface LinkButtonProps {
   children: ReactNode;

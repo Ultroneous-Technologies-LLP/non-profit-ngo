@@ -1,11 +1,10 @@
 "use client";
 
 import clsx from "clsx";
-import Image from "next/image";
 import { FC, useEffect, useState } from "react";
 
 import { Cross, LoginIcons } from "@/components";
-import { LinkButton } from "@/components/common";
+import { LinkButton, LinkButtonVariantEnum, NextImageWithFallback } from "@/components/common";
 import { BREAKPOINT_XL } from "@/constant";
 
 import { HeaderProps } from "./types";
@@ -64,7 +63,7 @@ export const Header: FC<HeaderProps> = ({ buttons, logo, menu }) => {
         <div className="mx-auto flex max-w-336 items-center justify-between px-4 py-4 xl:px-16">
           <div>
             <LinkButton href="/" isNormalLink>
-              <Image
+              <NextImageWithFallback
                 alt={logo.alt}
                 className="h-6 w-21 xl:h-8.5 xl:w-31"
                 height={35}
@@ -95,7 +94,7 @@ export const Header: FC<HeaderProps> = ({ buttons, logo, menu }) => {
             <LinkButton
               className="rounded-full px-6.5 py-5 text-xl/5!"
               href={buttons.donateButton.href}
-              variant="primaryYellow"
+              variant={LinkButtonVariantEnum.PRIMARY_YELLOW}
             >
               {buttons.donateButton.label}
             </LinkButton>
@@ -148,7 +147,7 @@ export const Header: FC<HeaderProps> = ({ buttons, logo, menu }) => {
                   className="rounded-full px-10 py-5"
                   href={buttons.donateButton.href}
                   onClick={() => setIsMenuOpen(false)}
-                  variant="primaryYellow"
+                  variant={LinkButtonVariantEnum.PRIMARY_YELLOW}
                 >
                   {buttons.donateButton.label}
                 </LinkButton>

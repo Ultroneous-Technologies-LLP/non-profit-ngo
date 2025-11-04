@@ -1,7 +1,12 @@
-import Image from "next/image";
 import { FC } from "react";
 
-import { Container, LinkButton, Title } from "@/components";
+import {
+  Container,
+  LinkButton,
+  NextImageWithFallback,
+  Title,
+  LinkButtonVariantEnum,
+} from "@/components";
 
 import { HeroProps } from "./types";
 
@@ -14,14 +19,14 @@ export const Hero: FC<HeroProps> = ({ title, description, event, heroImage, back
       </p>
       <div className="rounded-40px mx-auto flex w-full flex-col gap-4 bg-white/25 p-4 md:mr-auto md:ml-0 md:w-fit md:flex-row xl:gap-6.5 xl:px-5 xl:py-5.5">
         <div className="relative w-full md:w-fit">
-          <Image
+          <NextImageWithFallback
             alt={event.image.alt}
             className="rounded-20px h-35 w-full object-cover xl:h-40.5"
             height={163}
             src={event.image.src}
             width={159}
           />
-          <Image
+          <NextImageWithFallback
             alt={event.playButton.alt}
             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
             height={30}
@@ -39,7 +44,7 @@ export const Hero: FC<HeroProps> = ({ title, description, event, heroImage, back
           <LinkButton
             className="rounded-40px px-8.5 py-2.5 xl:px-12"
             href={event.button.href}
-            variant="primaryYellow"
+            variant={LinkButtonVariantEnum.PRIMARY_YELLOW}
           >
             {event.button.label}
           </LinkButton>
@@ -47,9 +52,9 @@ export const Hero: FC<HeroProps> = ({ title, description, event, heroImage, back
       </div>
     </div>
     <div className="hidden w-full md:block md:max-w-70.5 lg:max-w-170">
-      <Image alt={heroImage.alt} height={669} src={heroImage.src} width={686} />
+      <NextImageWithFallback alt={heroImage.alt} height={669} src={heroImage.src} width={686} />
     </div>
-    <Image
+    <NextImageWithFallback
       alt={backgroundImage.alt}
       className="absolute top-0 left-0 z-0 h-138.5 w-232! xl:top-5 xl:left-11 xl:h-102! xl:w-367!"
       fill

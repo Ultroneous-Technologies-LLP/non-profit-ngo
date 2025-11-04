@@ -1,8 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import { FC } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+
+import { NextImageWithFallback } from "@/components/common";
 
 import { SLIDER_SETTINGS } from "./constant";
 import { HappyFacesProps } from "./types";
@@ -16,7 +17,7 @@ export const MobileSlider: FC<HappyFacesProps> = ({ sections }) => (
         <SwiperSlide key={id}>
           <div className={spaceY}>
             {images.map(({ alt, height, src, width }) => (
-              <Image alt={alt} height={height} key={src} src={src} width={width} />
+              <NextImageWithFallback alt={alt} height={height} key={src} src={src} width={width} />
             ))}
           </div>
         </SwiperSlide>

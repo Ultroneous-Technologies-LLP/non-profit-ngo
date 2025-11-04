@@ -1,7 +1,7 @@
-import Image from "next/image";
 import { FC } from "react";
 
 import { Container, Title } from "@/components";
+import { NextImageWithFallback } from "@/components/common";
 
 import { MostTrustedProps } from "./type";
 
@@ -26,7 +26,7 @@ export const MostTrusted: FC<MostTrustedProps> = ({ backgroundImage, stats, titl
         </div>
       ))}
     </div>
-    <Image
+    <NextImageWithFallback
       alt={backgroundImage.alt}
       className="absolute inset-0 z-0 object-cover object-center"
       fill
