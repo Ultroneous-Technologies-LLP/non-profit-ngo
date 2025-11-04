@@ -1,8 +1,8 @@
 import { Image } from "@/types";
 
 interface Title {
-  color: string;
   text: string;
+  color?: string;
 }
 
 interface TextImage {

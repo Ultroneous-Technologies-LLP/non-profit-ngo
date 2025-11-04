@@ -1,7 +1,7 @@
-import Image from "next/image";
 import { FC } from "react";
 
 import { Container } from "@/components";
+import { NextImageWithFallback } from "@/components/common";
 
 import { MarqueeAnimationProps } from "./type";
 
@@ -15,7 +15,7 @@ export const MarqueeAnimation: FC<MarqueeAnimationProps> = ({ donations }) => (
         <div className="flex shrink-0 items-center gap-6 px-6 xl:gap-10 xl:px-5">
           {donations.map(({ id, name, amount, image, alt }) => (
             <div className="flex items-center gap-6 xl:gap-5" key={id}>
-              <Image
+              <NextImageWithFallback
                 alt={alt}
                 className="h-6 w-9.5 xl:h-10 xl:w-16"
                 height={40}
@@ -31,7 +31,7 @@ export const MarqueeAnimation: FC<MarqueeAnimationProps> = ({ donations }) => (
         <div className="flex shrink-0 items-center gap-6 px-6 xl:gap-10 xl:px-5">
           {donations.map(({ id, name, amount, image, alt }) => (
             <div className="flex items-center gap-6 xl:gap-5" key={id}>
-              <Image
+              <NextImageWithFallback
                 alt={alt}
                 className="h-6 w-9.5 xl:h-10 xl:w-16"
                 height={40}

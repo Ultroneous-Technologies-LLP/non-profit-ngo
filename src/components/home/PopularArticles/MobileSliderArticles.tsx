@@ -1,10 +1,11 @@
 "use client";
 
 import clsx from "clsx";
-import Image from "next/image";
 import { FC, useRef, useState, ChangeEvent } from "react";
 import { Swiper as SwiperType } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+
+import { NextImageWithFallback } from "@/components/common";
 
 import { SLIDER_CLASS, SLIDER_SETTINGS, STARTING_INDEX } from "./constant";
 import { PopularArticlesProps } from "./type";
@@ -36,7 +37,7 @@ export const MobileSliderArticles: FC<PopularArticlesProps> = ({ mainArticle, si
         {allArticles.map(({ alt, category, description, image, title, date, id }) => (
           <SwiperSlide key={id}>
             <div>
-              <Image
+              <NextImageWithFallback
                 alt={alt}
                 className="h-35 w-full rounded-2xl"
                 height={150}

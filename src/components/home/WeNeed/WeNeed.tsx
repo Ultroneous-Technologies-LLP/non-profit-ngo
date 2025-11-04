@@ -1,7 +1,7 @@
-import Image from "next/image";
 import { FC } from "react";
 
 import { Container, Title } from "@/components";
+import { NextImageWithFallback } from "@/components/common";
 
 import { WeNeedProps } from "./type";
 
@@ -12,7 +12,7 @@ export const WeNeed: FC<WeNeedProps> = ({ firstText, secondText, thirdText }) =>
         className="text-[76px]/25! md:text-[98px]/24.5! xl:text-[234px]/58.5!"
         text={firstText.title}
       />
-      <Image
+      <NextImageWithFallback
         alt={firstText.image.alt}
         className="h-12.5 w-19 md:h-25 md:w-38.5 xl:h-fit xl:w-71"
         height={182}
@@ -34,7 +34,7 @@ export const WeNeed: FC<WeNeedProps> = ({ firstText, secondText, thirdText }) =>
         </div>
       </div>
       <div className="pb-5 md:pb-13 xl:pb-24">
-        <Image
+        <NextImageWithFallback
           alt={secondText.image.alt}
           className="h-12.5 w-19 md:h-25 md:w-38.5 xl:h-fit xl:w-71"
           height={182}
@@ -49,7 +49,7 @@ export const WeNeed: FC<WeNeedProps> = ({ firstText, secondText, thirdText }) =>
         text={thirdText.title.text}
       />
       <div className="-mt-12 pl-8 md:-mt-10 md:pl-12 xl:-mt-20 xl:pl-18">
-        <Image
+        <NextImageWithFallback
           alt={thirdText.image.alt}
           className="h-30 w-18.5 object-contain xl:h-70.5 xl:w-45"
           height={283}

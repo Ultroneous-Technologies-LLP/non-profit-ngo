@@ -1,8 +1,7 @@
-import Image from "next/image";
 import { FC } from "react";
 
 import { Title, Container } from "@/components";
-import { LinkButton } from "@/components/common";
+import { LinkButton, LinkButtonVariantEnum, NextImageWithFallback } from "@/components/common";
 
 import { AboutUsProps } from "./types";
 
@@ -19,7 +18,7 @@ export const AboutUs: FC<AboutUsProps> = ({
     id="about-us"
   >
     <div className="xl:pl-10">
-      <Image
+      <NextImageWithFallback
         alt={image.alt}
         className="mx-auto h-73 w-66.5 xl:h-168 xl:w-148.5"
         height={673}
@@ -43,12 +42,12 @@ export const AboutUs: FC<AboutUsProps> = ({
       <LinkButton
         className="rounded-40px px-5 py-2.5 xl:px-6"
         href={button.href}
-        variant="primaryYellow"
+        variant={LinkButtonVariantEnum.PRIMARY_YELLOW}
       >
         {button.label}
       </LinkButton>
     </div>
-    <Image
+    <NextImageWithFallback
       alt={backgroundImage.alt}
       className="absolute top-18! left-0 z-0 h-138.5! w-232! object-cover xl:left-11! xl:h-102! xl:w-367!"
       fill

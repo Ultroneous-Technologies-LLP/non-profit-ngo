@@ -1,8 +1,7 @@
-import Image from "next/image";
 import { FC } from "react";
 
 import { Container, Title, UpRightArrow } from "@/components";
-import { LinkButton } from "@/components/common";
+import { LinkButton, LinkButtonVariantEnum, NextImageWithFallback } from "@/components/common";
 
 import { SupportFundraiserProps } from "./type";
 
@@ -26,7 +25,7 @@ export const SupportFundraiser: FC<SupportFundraiserProps> = ({
     <div className="flex flex-col justify-between gap-8 text-center md:flex-row">
       {fundraisers.map(({ alt, donateText, src, link, subtitle, title: fundraisersTitle, id }) => (
         <div className="mx-auto w-full md:max-w-75 xl:max-w-99" key={id}>
-          <Image
+          <NextImageWithFallback
             alt={alt}
             className="xl:rounded-20px mx-auto h-60 w-81.5 rounded-3xl md:h-45 md:w-75.5 xl:h-76 xl:w-99"
             height={305}
@@ -42,7 +41,7 @@ export const SupportFundraiser: FC<SupportFundraiserProps> = ({
           <LinkButton
             className="rounded-full px-6.5 py-2.5 xl:px-5.5"
             href={link}
-            variant="primaryYellow"
+            variant={LinkButtonVariantEnum.PRIMARY_YELLOW}
           >
             {donateText}
           </LinkButton>
@@ -53,13 +52,13 @@ export const SupportFundraiser: FC<SupportFundraiserProps> = ({
       <LinkButton
         className="group flex! w-full items-end justify-center gap-3.5 rounded-full px-8.5 py-2.5 md:w-fit md:items-center"
         href={viewMore.link}
-        variant="primaryBlue"
+        variant={LinkButtonVariantEnum.PRIMARY_BLUE}
       >
         <span>{viewMore.label}</span>
         <UpRightArrow className="text-primary-yellow group-hover:text-primary-blue transition-colors duration-500 ease-in-out" />
       </LinkButton>
     </div>
-    <Image
+    <NextImageWithFallback
       alt={backgroundImage.alt}
       className="absolute top-12! z-0 xl:top-2.5! xl:left-11! xl:h-93.5! xl:w-360!"
       fill

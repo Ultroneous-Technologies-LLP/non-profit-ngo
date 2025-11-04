@@ -1,10 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import { JSX } from "react";
 
 import { Container, Title, Facebook, Instagram, LinkedIn, Youtube } from "@/components";
-import { LinkButton } from "@/components/common";
+import { LinkButton, LinkButtonVariantEnum, NextImageWithFallback } from "@/components/common";
 
 import { FooterProps } from "./types";
 
@@ -27,7 +26,7 @@ export const Footer = ({
       className="relative overflow-hidden py-8 xl:py-23.5"
     >
       <div className="pb-8 xl:pb-13">
-        <Image
+        <NextImageWithFallback
           alt={logo.alt}
           className="mx-auto h-7.5 w-25 md:w-26.5 xl:h-8.5 xl:w-31"
           height={35}
@@ -48,7 +47,7 @@ export const Footer = ({
         <LinkButton
           className="rounded-full px-4 py-2.5 xl:px-9.5 xl:py-2"
           href={button.href}
-          variant="primaryBlue"
+          variant={LinkButtonVariantEnum.PRIMARY_BLUE}
         >
           {button.label}
         </LinkButton>
@@ -90,7 +89,7 @@ export const Footer = ({
       <span className="font-segoe-regular text-philippine-gray z-10 block text-center text-xs/4 font-semibold xl:text-sm/3.5">
         © {currentYear} {companyName}
       </span>
-      <Image
+      <NextImageWithFallback
         alt={backgroundImage.alt}
         className="absolute top-0 z-0 h-169.5 w-367 object-contain xl:top-5 xl:left-11"
         fill

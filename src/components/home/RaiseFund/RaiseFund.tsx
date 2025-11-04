@@ -1,8 +1,7 @@
-import Image from "next/image";
 import { FC } from "react";
 
 import { Container, Title } from "@/components";
-import { LinkButton } from "@/components/common";
+import { LinkButton, LinkButtonVariantEnum, NextImageWithFallback } from "@/components/common";
 
 import { RaiseFundProps } from "./type";
 
@@ -29,7 +28,7 @@ export const RaiseFund: FC<RaiseFundProps> = ({
       </p>
     </div>
     <div className="z-10 flex items-center justify-center pb-8 md:col-start-2 md:col-end-2 md:row-start-1 md:row-end-3 md:justify-end md:pb-0">
-      <Image
+      <NextImageWithFallback
         alt={image.alt}
         className="h-60 w-60 xl:h-102 xl:w-102"
         height={408}
@@ -41,19 +40,19 @@ export const RaiseFund: FC<RaiseFundProps> = ({
       <LinkButton
         className="w-full rounded-full px-6.5 py-2.5 text-center md:max-w-35 xl:max-w-45 xl:px-5.5"
         href={enrollButton.link}
-        variant="primaryBlue"
+        variant={LinkButtonVariantEnum.PRIMARY_BLUE}
       >
         {enrollButton.label}
       </LinkButton>
       <LinkButton
         className="border-primary-blue! w-full rounded-full px-6.5 py-2.5 md:max-w-47 xl:max-w-55 xl:px-5.5"
         href={fundForNGOButton.link}
-        variant="outlineBlue"
+        variant={LinkButtonVariantEnum.OUTLINE_BLUE}
       >
         {fundForNGOButton.label}
       </LinkButton>
     </div>
-    <Image
+    <NextImageWithFallback
       alt={background.alt}
       className="absolute top-8.5! z-0 h-135! md:top-0! md:h-full! xl:left-11! xl:w-full!"
       fill

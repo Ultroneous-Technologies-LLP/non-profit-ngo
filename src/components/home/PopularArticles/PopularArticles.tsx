@@ -1,9 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import { FC, useEffect, useState } from "react";
 
-import { Container, PopularArticlesProps, Title } from "@/components";
+import { Container, NextImageWithFallback, PopularArticlesProps, Title } from "@/components";
 import { BREAKPOINT_XL } from "@/constant";
 import { useWindowSize } from "@/hooks";
 
@@ -39,7 +38,7 @@ export const PopularArticles: FC<PopularArticlesProps> = ({
         <MobileSliderArticles mainArticle={mainArticle} sideArticles={sideArticles} />
       )}
       {backgroundImage && (
-        <Image
+        <NextImageWithFallback
           alt={backgroundImage.alt}
           className="absolute top-8.5! z-0 h-135! md:top-0! md:h-full! xl:left-11! xl:w-full!"
           fill

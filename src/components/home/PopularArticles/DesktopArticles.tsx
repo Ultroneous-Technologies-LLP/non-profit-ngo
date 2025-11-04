@@ -1,12 +1,18 @@
-import Image from "next/image";
 import { FC } from "react";
+
+import { NextImageWithFallback } from "@/components/common";
 
 import { PopularArticlesProps } from "./type";
 
 export const DesktopArticles: FC<PopularArticlesProps> = ({ mainArticle, sideArticles }) => (
   <div className="hidden gap-16 px-4 md:px-6 xl:flex xl:px-15">
     <div className="z-10 w-full max-w-175">
-      <Image alt={mainArticle.title} height={341} src={mainArticle.image} width={701} />
+      <NextImageWithFallback
+        alt={mainArticle.title}
+        height={341}
+        src={mainArticle.image}
+        width={701}
+      />
       <h3 className="font-segoe-regular pt-6 pb-4 text-[26px]/normal font-semibold">
         <span>{mainArticle.category}</span>
       </h3>
@@ -24,7 +30,12 @@ export const DesktopArticles: FC<PopularArticlesProps> = ({ mainArticle, sideArt
       {sideArticles.map((article, index) => (
         <div className="flex gap-6.5" key={index}>
           <div>
-            <Image alt={article.title} height={160} src={article.image} width={245} />
+            <NextImageWithFallback
+              alt={article.title}
+              height={160}
+              src={article.image}
+              width={245}
+            />
           </div>
           <div className="w-full max-w-76">
             <h3 className="font-segoe-regular py-3.5 text-base/normal font-semibold">
