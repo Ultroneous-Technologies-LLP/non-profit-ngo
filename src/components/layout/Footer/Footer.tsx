@@ -4,14 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { JSX } from "react";
 
-import { Container } from "../../common";
-import { Facebook, Instagram, LinkedIn, Youtube } from "../../icons";
+import { Container, Title, Facebook, Instagram, LinkedIn, Youtube } from "@/components";
 
 import { FooterProps } from "./types";
 
 export const Footer = ({
   logo,
-  heading,
+  title,
   description,
   button,
   navLinks,
@@ -37,9 +36,10 @@ export const Footer = ({
         />
       </div>
       <div className="pb-3 xl:pb-8.5">
-        <h2 className="font-segoe-regular text-primary-blue text-32px/10 z-10 mx-auto w-full max-w-77.5 pb-3 text-center font-semibold xl:max-w-fit xl:pb-5 xl:text-6xl/15">
-          <span>{heading}</span>
-        </h2>
+        <Title
+          className="mx-auto w-full max-w-77.5 pb-3 text-center xl:max-w-fit xl:pb-5 xl:leading-15!"
+          text={title}
+        />
         <p className="font-segoe-regular z-10 mx-auto max-w-77.5 text-center text-xs/4.5 xl:max-w-201.5 xl:text-base/6">
           <span>{description}</span>
         </p>

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
 
-import { Container } from "@/components";
+import { Container, Title } from "@/components";
 
 import { AboutUsProps } from "./types";
 
@@ -31,9 +31,7 @@ export const AboutUs: FC<AboutUsProps> = ({
       <span className="font-segoe-regular text-primary-blue block pb-2 text-xl/7.5 font-semibold xl:pb-5 xl:text-2xl/6">
         {title}
       </span>
-      <h2 className="font-segoe-regular text-primary-blue text-32px/10 pb-2 font-semibold md:pb-4 xl:pb-5 xl:text-6xl/15">
-        <span>{description}</span>
-      </h2>
+      <Title className="pb-2 md:pb-4 xl:pb-5 xl:leading-15!" text={description} />
       {longDescription.map(({ text }) => (
         <p
           className="font-segoe-regular pb-3 text-sm/5 last:pb-4 xl:pb-5 xl:text-base/6 xl:last:pb-5"

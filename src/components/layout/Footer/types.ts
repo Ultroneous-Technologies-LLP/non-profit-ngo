@@ -23,8 +23,8 @@ export interface FooterProps {
   button: Button;
   companyName: string;
   description: string;
-  heading: string;
   logo: Image;
   navLinks: Button[];
   socialSection: SocialSection;
+  title: string;
 }

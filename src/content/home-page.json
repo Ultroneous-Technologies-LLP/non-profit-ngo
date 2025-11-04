@@ -1,6 +1,6 @@
 {
   "hero": {
-    "heading": "Envision a brighter future for everyone.",
+    "title": "Envision a brighter future for everyone.",
     "description": "Donating is a noble and selfless act with no downside—every contribution, no matter the size, makes a meaningful impact on the lives of those in need.",
     "event": {
       "title": "Join our Upcoming Event",
@@ -36,10 +36,7 @@
       }
     },
     "secondText": {
-      "titles": [
-        { "text": "NEED", "color": "text-primary-blue" },
-        { "text": "YOUR", "color": "text-cool-grey" }
-      ],
+      "titles": [{ "text": "NEED" }, { "text": "YOUR" }],
       "image": {
         "src": "/assets/images/children-2.png",
         "alt": "Children 2"

@@ -17,6 +17,6 @@ export interface HeroProps {
   backgroundImage: Image;
   description: string;
   event: HeroEvent;
-  heading: string;
   heroImage: Image;
+  title: string;
 }

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
 
-import { Container } from "@/components";
+import { Container, Title } from "@/components";
 
 import { RaiseFundProps } from "./type";
 
@@ -20,9 +20,10 @@ export const RaiseFund: FC<RaiseFundProps> = ({
       md:grid-cols-[minmax(0,352px)_minmax(0,240px)] md:gap-x-8 xl:grid-cols-[minmax(0,705px)_minmax(0,408px)] xl:gap-x-23 xl:py-17 xl:pr-12 xl:pl-21"
   >
     <div className="z-10 w-full md:col-start-1 md:col-end-1">
-      <h2 className="font-segoe-regular text-primary-blue text-32px/10 mx-auto pb-2 text-center font-semibold md:mr-auto md:ml-0 md:text-start xl:pb-2.5 xl:text-6xl/18.5">
-        {title}
-      </h2>
+      <Title
+        className="mx-auto w-full max-w-77.5 pb-2 text-center md:mr-auto md:ml-0 md:text-start xl:pb-2.5"
+        text={title}
+      />
       <p className="font-segoe-regular pb-8 text-center text-xs/4.5 md:pb-0 md:text-start xl:text-base/6">
         {description}
       </p>
