@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Link from "next/link";
 import { FC } from "react";
 
-import { Container, Title } from "@/components";
+import { Title, Container } from "@/components";
+import { LinkButton } from "@/components/common";
 
 import { AboutUsProps } from "./types";
 
@@ -40,13 +40,13 @@ export const AboutUs: FC<AboutUsProps> = ({
           <span>{text}</span>
         </p>
       ))}
-      <Link
-        className="font-segoe-regular text-primary-blue bg-primary-yellow hover:text-primary-blue hover:border-primary-blue rounded-40 inline-block border border-transparent px-5 py-2.5 text-sm/5 font-semibold
-        transition-colors duration-500 ease-in-out hover:bg-transparent xl:px-6 xl:text-lg/6.5"
+      <LinkButton
+        className="rounded-40px px-5 py-2.5 xl:px-6"
         href={button.href}
+        variant="primaryYellow"
       >
         {button.label}
-      </Link>
+      </LinkButton>
     </div>
     <Image
       alt={backgroundImage.alt}

@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { JSX } from "react";
 
 import { Container, Title, Facebook, Instagram, LinkedIn, Youtube } from "@/components";
+import { LinkButton } from "@/components/common";
 
 import { FooterProps } from "./types";
 
@@ -45,24 +45,25 @@ export const Footer = ({
         </p>
       </div>
       <div className="grid place-content-center pb-8 xl:pb-13">
-        <Link
-          className="bg-primary-blue font-segoe-regular text-primary-yellow hover:border-primary-blue hover:text-primary-blue z-10 inline-block rounded-full border border-transparent px-4 py-2.5 
-          text-sm/5 font-semibold transition-colors duration-500 ease-in-out hover:bg-transparent xl:px-9.5 xl:py-2 xl:text-lg/6.5"
+        <LinkButton
+          className="rounded-full px-4 py-2.5 xl:px-9.5 xl:py-2"
           href={button.href}
+          variant="primaryBlue"
         >
           {button.label}
-        </Link>
+        </LinkButton>
       </div>
       <div className="flex flex-col items-center justify-center gap-3 pb-8 xl:flex-row xl:gap-9 xl:pb-13">
         {navLinks.map((link, index) => (
-          <Link
+          <LinkButton
             aria-label={link.label}
             className="font-segoe-regular text-primary-blue z-10 text-base/6 font-semibold xl:text-lg/4.5"
             href={link.href}
+            isNormalLink
             key={index}
           >
             {link.label}
-          </Link>
+          </LinkButton>
         ))}
       </div>
       <div className="pb-8 xl:pb-15">
@@ -71,17 +72,18 @@ export const Footer = ({
         </h3>
         <div className="flex justify-center gap-3 xl:gap-6">
           {socialSection.links.map((item, index) => (
-            <Link
+            <LinkButton
               aria-label={item.label}
               className="border-primary-blue/10 z-10 grid size-9.5 place-content-center rounded-full border-2 xl:size-11"
               href={item.href}
+              isNormalLink
               key={index}
             >
               {item.icon === "LinkedIn" && <LinkedIn className="text-primary-blue" />}
               {item.icon === "Facebook" && <Facebook className="text-primary-blue" />}
               {item.icon === "Instagram" && <Instagram className="text-primary-blue" />}
               {item.icon === "Youtube" && <Youtube className="text-primary-blue" />}
-            </Link>
+            </LinkButton>
           ))}
         </div>
       </div>

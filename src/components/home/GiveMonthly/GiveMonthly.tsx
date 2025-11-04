@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Link from "next/link";
 import { FC } from "react";
 
 import { Container, Title, UpRightArrow } from "@/components";
+import { LinkButton } from "@/components/common";
 
 import { ProgressCircle } from "./ProgressCircle";
 import { GiveMonthlyProps } from "./types";
@@ -19,7 +19,7 @@ export const GiveMonthly: FC<GiveMonthlyProps> = ({
     className="relative overflow-hidden"
   >
     <div className="z-10 pt-4 md:pt-3 xl:pt-8">
-      <Title className="pb-2 text-center xl:pb-2.5 xl:leading-20!" text={title} />
+      <Title className="pb-2 text-center xl:pb-2.5 xl:leading-23.5!" text={title} />
       <p className="font-segoe-regular mx-auto w-full max-w-205 pb-8 text-center text-xs/4.5 xl:pb-17 xl:text-base/6">
         <span>{description}</span>
       </p>
@@ -49,26 +49,26 @@ export const GiveMonthly: FC<GiveMonthlyProps> = ({
             <h5 className="font-segoe-regular pt-18 pb-4 text-sm/5 font-semibold xl:pt-10 xl:pb-5 xl:text-lg/6">
               <span>{status}</span>
             </h5>
-            <Link
-              className="font-segoe-regular bg-primary-yellow text-primary-blue hover:text-primary-blue hover:border-primary-blue inline-block rounded-full border border-transparent px-6.5 py-2.5 text-sm/5 font-semibold
-            transition-colors duration-500 ease-in-out hover:bg-transparent xl:px-5.5 xl:text-lg/6.5"
+            <LinkButton
+              className="rounded-full px-6.5 py-2.5 xl:px-5.5"
               href={link}
+              variant="primaryYellow"
             >
               {label}
-            </Link>
+            </LinkButton>
           </div>
         )
       )}
     </div>
     <div className="z-10 mt-8 flex justify-center xl:mt-15">
-      <Link
-        className="bg-primary-blue font-segoe-regular text-primary-yellow hover:text-primary-blue hover:border-primary-blue group flex w-full items-end justify-center gap-3.5 rounded-full border border-transparent px-8.5 py-2.5 text-sm/5 font-semibold
-        transition-colors duration-500 ease-in-out hover:bg-transparent md:w-fit md:items-center xl:text-lg/6"
+      <LinkButton
+        className="group flex! w-full items-end justify-center gap-3.5 rounded-full px-8.5 py-2.5 md:w-fit md:items-center"
         href={viewMore.link}
+        variant="primaryBlue"
       >
         <span>{viewMore.label}</span>
         <UpRightArrow className="text-primary-yellow group-hover:text-primary-blue transition-colors duration-500 ease-in-out" />
-      </Link>
+      </LinkButton>
     </div>
     <Image
       alt={backgroundImage.alt}
