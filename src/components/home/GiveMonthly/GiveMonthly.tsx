@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
 
-import { Container, UpRightArrow } from "@/components";
+import { Container, Title, UpRightArrow } from "@/components";
 
 import { ProgressCircle } from "./ProgressCircle";
 import { GiveMonthlyProps } from "./types";
@@ -19,9 +19,7 @@ export const GiveMonthly: FC<GiveMonthlyProps> = ({
     className="relative overflow-hidden"
   >
     <div className="z-10 pt-4 md:pt-3 xl:pt-8">
-      <h2 className="font-segoe-regular text-primary-blue text-32px/10 pb-2 text-center font-semibold xl:pb-2.5 xl:text-6xl/20">
-        <span>{title}</span>
-      </h2>
+      <Title className="pb-2 text-center xl:pb-2.5 xl:leading-20!" text={title} />
       <p className="font-segoe-regular mx-auto w-full max-w-205 pb-8 text-center text-xs/4.5 xl:pb-17 xl:text-base/6">
         <span>{description}</span>
       </p>

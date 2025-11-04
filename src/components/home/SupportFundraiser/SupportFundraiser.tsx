@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
 
-import { Container, UpRightArrow } from "@/components";
+import { Container, Title, UpRightArrow } from "@/components";
 
 import { SupportFundraiserProps } from "./type";
 
@@ -18,9 +18,7 @@ export const SupportFundraiser: FC<SupportFundraiserProps> = ({
     className="px-4 pb-25 md:px-6 xl:px-15 xl:pb-40"
   >
     <div className="z-10 md:pt-3 xl:pt-11">
-      <h2 className="font-segoe-regular text-primary-blue text-32px/10 pb-2 text-center font-semibold xl:pb-2.5 xl:text-6xl/23.5">
-        <span>{title}</span>
-      </h2>
+      <Title className="pb-2 text-center xl:pb-2.5" text={title} />
       <p className="font-segoe-regular mx-auto w-full max-w-205 pb-8 text-center text-xs/4.5 xl:pb-15 xl:text-base/6">
         <span>{description}</span>
       </p>

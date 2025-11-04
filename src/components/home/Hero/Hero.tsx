@@ -2,22 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
 
-import { Container } from "@/components";
+import { Container, Title } from "@/components";
 
 import { HeroProps } from "./types";
 
-export const Hero: FC<HeroProps> = ({
-  heading,
-  description,
-  event,
-  heroImage,
-  backgroundImage,
-}) => (
+export const Hero: FC<HeroProps> = ({ title, description, event, heroImage, backgroundImage }) => (
   <Container className="relative flex flex-col justify-between gap-6 overflow-hidden px-4 pb-25 md:flex-row md:px-6 md:pb-14 xl:gap-5 xl:px-15 xl:pt-30.5 xl:pb-40">
     <div className="w-full md:max-w-91.5 xl:max-w-165">
-      <h1 className="font-segoe-regular text-primary-blue pb-6 text-5xl/14 font-semibold xl:pb-9 xl:text-[81px]/21.5">
-        <span>{heading}</span>
-      </h1>
+      <Title isMainTitle={true} text={title} />
       <p className="font-segoe-regular w-full max-w-150 pb-6 text-sm/5 xl:text-base/6">
         <span>{description}</span>
       </p>
@@ -39,9 +31,9 @@ export const Hero: FC<HeroProps> = ({
           />
         </div>
         <div className="w-full md:max-w-44 xl:max-w-75">
-          <h2 className="font-segoe-regular pb-2 text-base/6 font-semibold xl:pb-4 xl:text-2xl/6.5">
+          <p className="font-segoe-regular pb-2 text-base/6 font-semibold xl:pb-4 xl:text-2xl/6.5">
             <span>{event.title}</span>
-          </h2>
+          </p>
           <p className="font-segoe-regular pb-2 text-sm/5 xl:pb-4 xl:text-base/6">
             <span>{event.description}</span>
           </p>
