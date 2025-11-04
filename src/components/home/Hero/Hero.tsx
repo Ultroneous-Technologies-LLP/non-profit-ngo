@@ -1,8 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
 import { FC } from "react";
 
-import { Container, Title } from "@/components";
+import { Container, LinkButton, Title } from "@/components";
 
 import { HeroProps } from "./types";
 
@@ -37,12 +36,13 @@ export const Hero: FC<HeroProps> = ({ title, description, event, heroImage, back
           <p className="font-segoe-regular pb-2 text-sm/5 xl:pb-4 xl:text-base/6">
             <span>{event.description}</span>
           </p>
-          <Link
-            className="bg-primary-yellow font-segoe-regular text-primary-blue hover:border-primary-blue rounded-40px inline-block border border-transparent px-8.5 py-2.5 text-sm/5 font-semibold transition-colors duration-500 ease-in-out hover:bg-transparent xl:px-12 xl:text-lg/6.5"
+          <LinkButton
+            className="rounded-40px px-8.5 py-2.5 xl:px-12"
             href={event.button.href}
+            variant="primaryYellow"
           >
             {event.button.label}
-          </Link>
+          </LinkButton>
         </div>
       </div>
     </div>

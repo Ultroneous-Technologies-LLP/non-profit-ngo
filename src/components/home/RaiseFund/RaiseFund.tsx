@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Link from "next/link";
 import { FC } from "react";
 
 import { Container, Title } from "@/components";
+import { LinkButton } from "@/components/common";
 
 import { RaiseFundProps } from "./type";
 
@@ -21,7 +21,7 @@ export const RaiseFund: FC<RaiseFundProps> = ({
   >
     <div className="z-10 w-full md:col-start-1 md:col-end-1">
       <Title
-        className="mx-auto w-full max-w-77.5 pb-2 text-center md:mr-auto md:ml-0 md:text-start xl:pb-2.5"
+        className="mx-auto w-full max-w-77.5 pb-2 text-center md:mr-auto md:ml-0 md:text-start xl:max-w-fit xl:pb-2.5"
         text={title}
       />
       <p className="font-segoe-regular pb-8 text-center text-xs/4.5 md:pb-0 md:text-start xl:text-base/6">
@@ -38,20 +38,20 @@ export const RaiseFund: FC<RaiseFundProps> = ({
       />
     </div>
     <div className="flex flex-col items-center justify-center gap-5 md:col-start-1 md:col-end-1 md:flex-row md:items-start md:justify-start">
-      <Link
-        className="font-segoe-regular bg-primary-blue text-primary-yellow hover:text-primary-blue hover:border-primary-blue z-10 inline-block w-full rounded-full border border-transparent px-6.5 py-2.5 text-center text-sm/5 font-semibold transition-colors duration-500
-        ease-in-out hover:bg-transparent md:max-w-35 xl:max-w-45 xl:px-5.5 xl:text-lg/6.5"
+      <LinkButton
+        className="w-full rounded-full px-6.5 py-2.5 text-center md:max-w-35 xl:max-w-45 xl:px-5.5"
         href={enrollButton.link}
+        variant="primaryBlue"
       >
         {enrollButton.label}
-      </Link>
-      <Link
-        className="font-segoe-regular text-primary-blue border-primary-blue hover:text-primary-blue hover:border-primary-blue z-10 inline-block w-full rounded-full border bg-transparent px-6.5 py-2.5 text-center text-sm/5 font-semibold transition-colors duration-500
-        ease-in-out hover:bg-transparent md:max-w-47 xl:max-w-55 xl:px-5.5 xl:text-lg/6.5"
+      </LinkButton>
+      <LinkButton
+        className="border-primary-blue! w-full rounded-full px-6.5 py-2.5 md:max-w-47 xl:max-w-55 xl:px-5.5"
         href={fundForNGOButton.link}
+        variant="outlineBlue"
       >
         {fundForNGOButton.label}
-      </Link>
+      </LinkButton>
     </div>
     <Image
       alt={background.alt}
